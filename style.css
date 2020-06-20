@@ -1,0 +1,15 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+nav {
+    margin: 10px;
+}
+
+body {
+    background-image: url(index-hero.jpeg);
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
