@@ -1,11 +1,12 @@
 :root {
-    --my-blue: #1e017f;
+    --my-blue: #120148;
     --my-orange: #ffc848;
 }
 
 body, html {
     height: 100%;
     margin: 0;
+    color: var(--my-orange);
 }
 
 body {
@@ -17,6 +18,15 @@ body {
 
 nav {
     margin: 10px;
+    background-color: #1201488e;
+}
+
+.navbar-brand {
+    color: var(--my-orange);
+}
+
+.logo-brackets {
+    color: #e23ced;
 }
 
 .card {
@@ -25,12 +35,6 @@ nav {
 
 .card-body {
     background-color: var(--my-blue);
-    color: var(--my-orange);
-}
-
-figure img {
-    display: block;
-    margin: auto;
 }
 
 .card-text {

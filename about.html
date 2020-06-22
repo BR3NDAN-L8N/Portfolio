@@ -5,29 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
 
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <nav class="nav justify-content-end nav-pills">
-            <a class="nav-item nav-link active" href="about.html">About</a>
-            <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
-            <a class="nav-item nav-link" href="contact.html">Contact</a>
-        </nav>
+        
+        <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+            <!-- Brand -->
+            <a class="navbar-brand" href="index.html"><span class="logo-brackets"><</span>br<span class="logo-brackets">></span>endan</a>
+          
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
     </header>
 
     <main>
-        <article class="card">
-            <section class="card-body">
-                <h1 class="text-center">Brendan Leighton</h1>
-                <figure>
-                    <img src="me.jpg" alt="A MEME. Photo one, shows someone looking away from computer with the text, Me focusing on Zoom class. Photo two, shows the same person in the same spot with their turned slightly towards the camera and them looking directly in the camera with the text, Me checking my angles to make sure I'm still hot." />
-                </figure>
-                <p class="card-text">Just some random text.</p>
-            </section>
-        </article>
+        
+            <article class="card"> 
+                <section class="card-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1 class="text-center">Brendan Leighton</h1>
+                        </div>
+                        <div class="col-md-5">
+                            <figure>
+                                <img class="mx-auto d-block img-fluid" src="me.jpg" alt="A MEME. Photo one, shows someone looking away from computer with the text, Me focusing on Zoom class. Photo two, shows the same person in the same spot with their turned slightly towards the camera and them looking directly in the camera with the text, Me checking my angles to make sure I'm still hot." />
+                            </figure>
+                        </div>
+                        <div class="col-7">
+                            <p class="card-text">Just some random text.</p>
+                        </div>
+                    </div>
+                </section>
+            </article>
+        
     </main>
     
 </body>
