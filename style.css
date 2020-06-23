@@ -40,8 +40,13 @@ hr {
 }
 
 .card {
+    margin: 20px auto;
+}
+
+article.card {
     margin: 100px 20px -40px;
     color: var(--my-orange);
+    background-color: var(--my-blue);
 }
 
 .card-body {
