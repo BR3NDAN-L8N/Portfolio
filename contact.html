@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
 
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -34,6 +34,37 @@
             </div>
           </nav>
     </header>
+
+    <main class="container">
+      <form action="">
+        <div class="row">
+          <h1 class="col-sm-12">Contact</h1>
+        </div>
+        <div class="row">
+          <hr />
+        </div>
+        <div class="row">
+          <!-- Name and Email forms -->
+          <section class="col-md-6">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="John Smith" name="name" />
+          </section>
+          <section class="col-md-6">
+            <label for="email">Email</label>
+            <input type="text" class="form-control" id="email" placeholder="Example@email.com" name="email" />
+          </section>
+        </div>
+        <div class="row">
+          <!-- Message and Submit button -->
+          <section class="col-sm-12">
+            <label for="form-message">Message</label>
+              <textarea type="text" class="form-control" rows="7" id="form-message" placeholder="Your message here..." name="email">
+            </textarea>
+            <input type="submit" value="Submit" class="col-md-2 col-sm-12">
+          </section>
+        </div>
+      </form>  
+    </main>
     
 </body>
 </html>
