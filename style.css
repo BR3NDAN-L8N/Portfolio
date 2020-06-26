@@ -31,6 +31,10 @@ nav {
     color: var(--my-pink);
 }
 
+a, h1, h2, h3, h4 {
+    color: #ffffff;
+}
+
 hr {
     height: 3px;
     width: 100%;
