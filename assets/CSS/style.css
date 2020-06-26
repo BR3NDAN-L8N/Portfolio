@@ -31,7 +31,7 @@ nav {
     color: var(--my-pink);
 }
 
-a, h1, h2, h3, h4 {
+ h1, h2, h3, h4, h5, h6 {
     color: #ffffff;
 }
 
@@ -61,6 +61,10 @@ article.card {
     margin: auto 15%;
 }
 
+a {
+    cursor: pointer;
+}
+
 form, .card {
     
     border-color: var(--my-orange);
@@ -77,10 +81,6 @@ input, textarea {
     margin: 0px auto 25px;
 }
 
-textarea {
-    height: 3000px;
-}
-
 input[type=submit] {
     background-color: var(--my-pink);
     color: var(--my-blue);
@@ -90,3 +90,26 @@ input[type=submit] {
     cursor: pointer;
     float: left;
   }
+
+@media (min-width: 769px) {
+    main div div div section div img {
+        height: 20vw;
+        width: 100%;
+    }
+    
+    main div div div section div img.horiseon-image {
+        height: 20vw;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+
+
+  @media (max-width: 768px) {
+      main div div div section div img {
+          height: 400px;
+          width: 100%;
+      }
+  }
+
