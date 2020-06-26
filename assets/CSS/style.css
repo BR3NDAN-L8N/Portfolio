@@ -1,0 +1,92 @@
+:root {
+    --my-blue: #120148;
+    --my-orange: #ffc848;
+    --my-pink: #e23ced;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    
+}
+
+body {
+    background-image: url(../Images/index-hero.jpeg);
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+nav {
+    margin: 10px;
+    background-color: #1201488e;
+}
+
+.navbar-brand {
+    color: var(--my-orange);
+}
+
+.logo-brackets {
+    color: var(--my-pink);
+}
+
+a, h1, h2, h3, h4 {
+    color: #ffffff;
+}
+
+hr {
+    height: 3px;
+    width: 100%;
+    margin: 10px 15px 20px;
+    border-color: var(--my-orange);
+    text-align: center;
+}
+
+.card {
+    margin: 20px auto;
+}
+
+article.card {
+    margin: 100px 20px -40px;
+    color: var(--my-orange);
+    background-color: var(--my-blue);
+}
+
+.card-body {
+    background-color: var(--my-blue);
+}
+
+.card-text {
+    margin: auto 15%;
+}
+
+form, .card {
+    
+    border-color: var(--my-orange);
+}
+
+form {
+    background-color: var(--my-blue);
+    color: var(--my-orange);
+    margin-top: 100px;
+    padding: 30px;
+}
+
+input, textarea {
+    margin: 0px auto 25px;
+}
+
+textarea {
+    height: 3000px;
+}
+
+input[type=submit] {
+    background-color: var(--my-pink);
+    color: var(--my-blue);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: left;
+  }
