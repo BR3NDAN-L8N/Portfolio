@@ -1,6 +1,6 @@
 :root {
     --my-blue: #120148;
-    --my-orange: #ffc848;
+    --my-orange: #fccf68;
     --my-pink: #e23ced;
 }
 
@@ -18,24 +18,31 @@ body {
     background-attachment: fixed;
 }
 
-nav {
+header nav {
     margin: 10px;
     background-color: #1201488e;
 }
 
-.navbar-brand {
+header nav a.navbar-brand {
     color: var(--my-orange);
 }
 
-.logo-brackets {
+header nav a span.logo-brackets {
     color: var(--my-pink);
 }
 
- h1, h2, h3, h4, h5, h6 {
+main.container {
+    padding: 0;
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
     color: #ffffff;
 }
 
-hr {
+/* From left to right, Index/About, Portfolio, Contact */
+main article section div hr, main div hr, main form div hr {
     height: 3px;
     width: 100%;
     margin: 10px 15px 20px;
@@ -43,31 +50,40 @@ hr {
     text-align: center;
 }
 
-.card {
-    margin: 20px auto;
-}
-
-article.card {
+main article.card {
     margin: 100px 20px -40px;
     color: var(--my-orange);
     background-color: var(--my-blue);
 }
 
-.card-body {
+/* Portfolio nested cards */
+main div div div section div.card {
+    margin: 20px auto;
+}
+
+/* From right to left: Index/About, Portfolio */
+main article section.card-body, main div div div section div.card-body {
     background-color: var(--my-blue);
 }
 
-.card-text {
+/* Index/About only */
+main article section div div div p.card-text {
     margin: auto 15%;
 }
 
-a {
+/* Links */
+/* Navbar on all pages */
+header nav a, header nav div ul li a,
+/* Portfolio Only*/
+main div div div section div div a {
     cursor: pointer;
+    color: var(--my-pink);
 }
 
-form, .card {
-    
-    border-color: var(--my-orange);
+/* From left to right: Index/About && Portfolio, Portfolio, Contact */
+main article.card, main div div div section div.card, main form  {
+    border: 2px ridge var(--my-orange);
+    border-radius: 5px;
 }
 
 form {
@@ -83,7 +99,7 @@ input, textarea {
 
 input[type=submit] {
     background-color: var(--my-pink);
-    color: var(--my-blue);
+    color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
