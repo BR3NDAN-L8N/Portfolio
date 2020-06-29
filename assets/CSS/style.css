@@ -19,8 +19,9 @@ body {
 }
 
 header nav {
-    margin: 10px;
-    background-color: #1201488e;
+    margin: 5px;
+    background-color: #120148d0;
+    border-radius: 5px;
 }
 
 header nav a.navbar-brand {
@@ -86,6 +87,7 @@ main article.card, main div div div section div.card, main form  {
     border-radius: 5px;
 }
 
+/* Form selectors present on Contact only */
 form {
     background-color: var(--my-blue);
     color: var(--my-orange);
@@ -106,6 +108,8 @@ input[type=submit] {
     cursor: pointer;
     float: left;
   }
+/* End of Form selectors */
+
 
 @media (min-width: 769px) {
     main div div div section div img {
