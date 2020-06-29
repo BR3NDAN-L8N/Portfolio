@@ -36,7 +36,9 @@ main.container {
     padding: 0;
 }
 
-
+main article.card {
+    padding: 30px;
+}
 
 h1, h2, h3, h4, h5, h6 {
     color: #ffffff;
@@ -46,7 +48,7 @@ h1, h2, h3, h4, h5, h6 {
 main article section div hr, main div hr, main form div hr {
     height: 3px;
     width: 100%;
-    margin: 10px 15px 20px;
+    margin: 10px 0px 20px;
     border-color: var(--my-orange);
     text-align: center;
 }
@@ -55,6 +57,10 @@ main article.card {
     margin: 100px 20px -40px;
     color: var(--my-orange);
     background-color: var(--my-blue);
+}
+
+main article section div div div figure img {
+    border-radius: 5px;
 }
 
 /* Portfolio nested cards */
@@ -68,9 +74,9 @@ main article section.card-body, main div div div section div.card-body {
 }
 
 /* Index/About only */
-main article section div div div p.card-text {
-    margin: auto 15%;
-}
+/* main article section div div div p.card-text {
+    margin: auto 15px;
+} */
 
 /* Links */
 /* Navbar on all pages */
@@ -82,19 +88,12 @@ main div div div section div div a {
 }
 
 /* From left to right: Index/About && Portfolio, Portfolio, Contact */
-main article.card, main div div div section div.card, main form  {
+main article.card, main div div div section div.card  {
     border: 2px ridge var(--my-orange);
     border-radius: 5px;
 }
 
 /* Form selectors present on Contact only */
-form {
-    background-color: var(--my-blue);
-    color: var(--my-orange);
-    margin-top: 100px;
-    padding: 30px;
-}
-
 input, textarea {
     margin: 0px auto 25px;
 }

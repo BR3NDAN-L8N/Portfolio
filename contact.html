@@ -39,32 +39,37 @@
           </nav>
     </header>
 
-    <main class="container p-2">
-      <form action="">
-        <div class="row">
-          <h1 class="col-sm-12">Contact</h1>
-          <hr />
+    <main class="container">
+
+      <article class="card">
+        <div class="card-body">
+          <form action="">
+            <div class="row">
+              <h1 class="col-sm-12">Contact</h1>
+              <hr />
+            </div>
+            <div class="row">
+              <!-- Name and Email forms -->
+              <section class="col-md-6">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="John Smith" name="name" />
+              </section>
+              <section class="col-md-6">
+                <label for="email">Email</label>
+                <input type="text" class="form-control" id="email" placeholder="Example@email.com" name="email" />
+              </section>
+            </div>
+            <div class="row">
+              <!-- Message and Submit button -->
+              <section class="col-sm-12">
+                <label for="form-message">Message</label>
+                  <textarea type="text" class="form-control" rows="7" id="form-message" placeholder="Tell me something about me eyes..." name="email"></textarea>
+                <input type="submit" value="Submit"  class="col-md-2 col-sm-12 text-uppercase font-weight-bold">
+              </section>
+            </div>
+          </form> 
         </div>
-        <div class="row">
-          <!-- Name and Email forms -->
-          <section class="col-md-6">
-            <label for="name">Name</label>
-            <input type="text" class="form-control" id="name" placeholder="John Smith" name="name" />
-          </section>
-          <section class="col-md-6">
-            <label for="email">Email</label>
-            <input type="text" class="form-control" id="email" placeholder="Example@email.com" name="email" />
-          </section>
-        </div>
-        <div class="row">
-          <!-- Message and Submit button -->
-          <section class="col-sm-12">
-            <label for="form-message">Message</label>
-              <textarea type="text" class="form-control" rows="7" id="form-message" placeholder="Tell me something about me eyes..." name="email"></textarea>
-            <input type="submit" value="Submit"  class="col-md-2 col-sm-12 text-uppercase font-weight-bold">
-          </section>
-        </div>
-      </form>  
+      </article> 
     </main>
     
 </body>
