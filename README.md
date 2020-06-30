@@ -1,9 +1,5 @@
 # ResponsiveBootstrapPortfolio
 
-# To Do
-* Add screenshot
-
-
 
 <!-- PROJECT LOGO -->
 <br />
