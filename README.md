@@ -1,5 +1,3 @@
-# ResponsiveBootstrapPortfolio
-
 
 <!-- PROJECT LOGO -->
 <br />
@@ -43,7 +41,8 @@ Responsive design ensures that web applications render well on a variety of devi
 <!-- CONTACT -->
 # Contact
 
-Brendan Leighton - BR3NDAN.L8N@gmail.com
+* [Email](BR3NDAN.L8N@gmail.com)
+* [LinkedIn](https://www.linkedin.com/in/brendan-leighton-ab5944113/)
 
 
 
