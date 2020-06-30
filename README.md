@@ -34,7 +34,7 @@ Project Link: [https://br3ndan-l8n.github.io/ResponsiveBootstrapPortfolio/](http
 
 ## Project Screenshot
 
-![Responsive Portfolio Screenshot](assets/images/screenshot.png)
+![Responsive Portfolio Screenshot](assets/Images/Portfolio-screenshot.png)
 
 ## Assignment
 
