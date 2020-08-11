@@ -4,6 +4,11 @@
     --my-pink: #e23ced;
 }
 
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
 body, html {
     height: 100%;
     margin: 0;
