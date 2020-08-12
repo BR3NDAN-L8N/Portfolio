@@ -13,6 +13,7 @@ body, html {
     height: 100%;
     margin: 0;
     padding: 0px;
+    font-size: large;
     
 }
 
@@ -62,6 +63,7 @@ main article.card {
     margin: 100px 20px -40px;
     color: var(--my-orange);
     background-color: var(--my-blue);
+    padding: 10px;
 }
 
 main article section div div div figure img {
@@ -139,7 +141,7 @@ input[type=submit] {
       }
       /* Portfolio nested cards */
     main div div div section div.card {
-        margin: 20px auto;
+        margin: 20px 0px;
     }
   }
 
