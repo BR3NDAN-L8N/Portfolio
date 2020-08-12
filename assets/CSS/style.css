@@ -49,6 +49,10 @@ main article.card {
 h1, h2, h3, h4, h5, h6 {
     color: #ffffff;
 }
+p {
+    text-align: justify;
+  text-justify: inter-word;
+}
 
 /* From left to right, Index/About, Portfolio, Contact */
 main article section div hr, main div hr, main form div hr {
