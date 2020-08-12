@@ -12,6 +12,7 @@
 body, html {
     height: 100%;
     margin: 0;
+    padding: 0px;
     
 }
 
@@ -24,9 +25,8 @@ body {
 }
 
 header nav {
-    margin: 5px;
-    background-color: #120148d0;
-    border-radius: 5px;
+    margin: 0px;
+    background-color: #120148;
 }
 
 header nav a.navbar-brand {
@@ -112,7 +112,7 @@ input[type=submit] {
 /* End of Form selectors */
 
 
-@media (min-width: 769px) {
+@media (min-width: 992px) {
     main div div div section div img {
         height: 200px;
         width: 300px;
@@ -132,7 +132,7 @@ input[type=submit] {
 
 
 
-  @media (max-width: 768px) {
+  @media (max-width: 991px) {
       main div div div section div img {
           height: 200px;
           width: 300px;
