@@ -37,6 +37,10 @@ header nav a.navbar-brand {
 header nav a span.logo-brackets {
     color: var(--my-pink);
 }
+.img-logo {
+    width: auto;
+    height: 45px;
+}
 
 main.container {
     padding: 0;
@@ -61,6 +65,7 @@ main article section div hr, main div hr, main form div hr {
     margin: 10px 0px 20px;
     border-color: var(--my-orange);
     text-align: center;
+    border-width: 1px;
 }
 
 main article.card {
