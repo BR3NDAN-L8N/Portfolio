@@ -3,63 +3,52 @@
     --my-orange: #fccf68;
     --my-pink: #e23ced;
 }
-
 * {
     padding: 0px;
     margin: 0px;
+    box-sizing: border-box;
 }
-
-body, html {
-    height: 100%;
-    margin: 0;
-    padding: 0px;
-    font-size: large;
+body {
+    font-size: medium;
+    background-color: var(--my-blue);
     
 }
 
-body {
-    background-image: url(../Images/index-hero.jpeg);
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-}
 
+/* 
+    NAV-BAR - can't find something? check @Media at bottom
+*/
 header nav {
     margin: 0px;
-    background-color: #120148;
-}
-
-header nav a.navbar-brand {
-    color: var(--my-orange);
-}
-
-header nav a span.logo-brackets {
-    color: var(--my-pink);
+    background-color: var(--my-blue);
+    border-bottom: 2px solid black;
 }
 .img-logo {
     width: auto;
     height: 45px;
 }
-
-main.container {
-    padding: 0;
+header nav a, header nav div ul li a {
+    cursor: pointer;
+    color: var(--my-pink);
 }
 
-main article.card {
-    padding: 30px;
-}
 
-h1, h2, h3, h4, h5, h6 {
-    color: #ffffff;
+/* 
+    MAIN - can't find something? check @Media at bottom
+*/
+main {
+    padding-top: 30px;
+    width: 100%;
+}
+h2 {
+    font-size: 3em;
 }
 p {
     text-align: justify;
-  text-justify: inter-word;
+    text-justify: inter-word;
 }
-
-/* From left to right, Index/About, Portfolio, Contact */
-main article section div hr, main div hr, main form div hr {
+/* Horizontal Rule for each section, About, Portfolio, Contact */
+main article section hr{
     height: 3px;
     width: 100%;
     margin: 10px 0px 20px;
@@ -67,46 +56,47 @@ main article section div hr, main div hr, main form div hr {
     text-align: center;
     border-width: 1px;
 }
-
-main article.card {
-    margin: 100px 20px -40px;
+.row, .container{
+    margin: auto 0px;
+    padding: auto 0px;
+}
+main article {
     color: var(--my-orange);
     background-color: var(--my-blue);
-    padding: 10px;
+    padding: 110px 0px;
+}
+main article:nth-child(even) {
+    background-color: #19006d;
 }
 
-main article section div div div figure img {
+
+/* 
+    PROJECT ARTICLE - can't find something? check @Media at bottom
+*/
+img.project-image {
     border-radius: 5px;
 }
 
-
-
-/* From right to left: Index/About, Portfolio */
-main article section.card-body, main div div div section div.card-body {
-    background-color: var(--my-blue);
+section.individual-project-section {
+    margin: 50px 0px;
+    padding: 20px 0px;
 }
-
-/* Index/About only */
-/* main article section div div div p.card-text {
-    margin: auto 15px;
-} */
-
-/* Links */
-/* Navbar on all pages */
-header nav a, header nav div ul li a,
-/* Portfolio Only*/
-main div div div section div div a {
+div.project-links {
+    text-align: center;
+}
+a.project-link {
     cursor: pointer;
     color: var(--my-pink);
+    text-decoration-line: none;
+}
+a.project-link:hover {
+    color: var(--my-orange);
 }
 
-/* From left to right: Index/About && Portfolio, Portfolio, Contact */
-main article.card, main div div div section div.card  {
-    border: 2px ridge var(--my-orange);
-    border-radius: 5px;
-}
 
-/* Form selectors present on Contact only */
+/* 
+    CONTACT FORM - can't find something? check @Media at bottom
+*/
 input, textarea {
     margin: 0px auto 25px;
 }
@@ -119,38 +109,30 @@ input[type=submit] {
     border-radius: 4px;
     cursor: pointer;
     float: left;
-  }
-/* End of Form selectors */
-
-
-@media (min-width: 992px) {
-    main div div div section div img {
-        height: 200px;
-        width: 300px;
-    }
-    /* Portfolio nested cards */
-    main div div div section div.card {
-        margin: 20px auto;
-        height: 100%;
-    }
-    
-    /* main div div div section div img.horiseon-image {
-        height: 20vw;
-        width: 100%;
-        object-fit: cover;
-    } */
 }
 
 
-
-  @media (max-width: 991px) {
-      main div div div section div img {
-          height: 200px;
-          width: 300px;
-      }
-      /* Portfolio nested cards */
-    main div div div section div.card {
-        margin: 20px 0px;
+/* 
+    MEDIA QUERIES
+*/
+@media (min-width: 992px) {
+    h1, h2, h3, h4, h5, h6 {
+        color: #ffffff;
     }
-  }
+    img {
+        height: 200px;
+        width: 300px;
+    }
+}
+
+@media (max-width: 991px) {
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    color: #ffffff;
+}
+img {
+    height: auto;
+    width: 100%;
+}
+}
 
