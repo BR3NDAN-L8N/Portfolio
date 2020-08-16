@@ -11,6 +11,8 @@
 body {
     font-size: medium;
     background-color: var(--my-blue);
+
+    
     
 }
 
@@ -22,6 +24,7 @@ header nav {
     margin: 0px;
     background-color: var(--my-blue);
     border-bottom: 2px solid black;
+    font-size: 18px;
 }
 .img-logo {
     width: auto;
@@ -29,7 +32,6 @@ header nav {
 }
 header nav a, header nav div ul li a {
     cursor: pointer;
-    color: var(--my-pink);
 }
 
 
@@ -63,12 +65,27 @@ main article section hr{
 main article {
     color: var(--my-orange);
     background-color: var(--my-blue);
-    padding: 110px 0px;
+    padding: 110px 100px;
 }
-main article:nth-child(even) {
-    background-color: #19006d;
+main article:nth-child(odd) {
+    background-color: #210e5e;
 }
 
+
+/* 
+    HERO ARTICLE - can't find something? check @Media at bottom
+*/
+article.hero {
+    height: 100vh;
+}
+article.hero svg.logo {
+    position: relative;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 75vh;
+    width: 100%;
+}
 
 /* 
     PROJECT ARTICLE - can't find something? check @Media at bottom
@@ -91,6 +108,15 @@ a.project-link {
 }
 a.project-link:hover {
     color: var(--my-orange);
+}
+
+
+/* 
+    ABOUT ARTICLE - can't find something? check @Media at bottom
+*/
+img.about-image {
+    width: 100%;
+    height: auto;
 }
 
 
@@ -126,13 +152,18 @@ input[type=submit] {
 }
 
 @media (max-width: 991px) {
-h1, h2, h3, h4, h5, h6 {
-    text-align: center;
-    color: #ffffff;
-}
-img {
-    height: auto;
-    width: 100%;
-}
+    h1, h2, h3, h4, h5, h6 {
+        text-align: center;
+        color: #ffffff;
+    }
+    img {
+        height: auto;
+        width: 100%;
+    }
 }
 
+@media (max-width: 500px) {
+    main article {
+        padding: 110px 15px;
+    }
+}
