@@ -93,6 +93,12 @@ article.hero svg.logo {
     height: 75vh;
     width: 100%;
 }
+h1.hero-title {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
 
 /* 
     PROJECT ARTICLE - can't find something? check @Media at bottom
