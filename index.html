@@ -11,12 +11,13 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="index.js"></script>
 </head>
 
 <body>
   <main>
     <header>
-      <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+      <nav class="navbar navbar-expand-sm navbar-dark fixed-top" id="navbar">
         <a class="navbar-brand" href="index.html">
           Brendan Leighton
         </a>
@@ -28,13 +29,13 @@
         <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="#project">Portfolio</a>
+              <a class="nav-link" href="#project"><span class="nav-bar-link">Portfolio</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
+              <a class="nav-link" href="#about"><span class="nav-bar-link">About</span></a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+            <li class="nav-item ">
+              <a class="nav-link" href="#contact"><span class="nav-bar-link">Contact</span></a>
             </li>
           </ul>
         </div>
@@ -72,12 +73,12 @@
       </section>
       <!-- PROJECT 1 -->
       <section class="row individual-project-section">
-        <h3 class="col-sm-12">My COVID Tracker</h3>
+        <h3 class="col-sm-12 project-title">My COVID Tracker</h3>
         <div class="row">
           <img class="project-image col-sm-12 col-md-5" src="https://media.giphy.com/media/Vh9PHybWF4VsakZqi2/giphy.gif"
             alt="Preview gif of the My COVID Tracker website." />
           <div class="project-links col-sm-12 col-md-7">
-            <p>
+            <p class="project-description">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, nam fuga! Odit quos ipsam numquam debitis
               molestias cum iure, consectetur qui aut, veniam nisi dolorem reprehenderit, quis incidunt exercitationem
               minus.
@@ -92,15 +93,13 @@
       </section>
       <!-- PROJECT 2 -->
       <section class="row individual-project-section">
-        <h3 class="col-sm-12">Weather Dashboard</h3>
+        <h3 class="col-sm-12 project-title">Weather Dashboard</h3>
         <div class="row">
           <img class="project-image col-sm-12 col-md-5" src="assets/Images/WeatherDashboard.png"
             alt="Preview of Weather Dashboard app." />
           <div class="project-links col-sm-12 col-md-7">
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, nam fuga! Odit quos ipsam numquam debitis
-              molestias cum iure, consectetur qui aut, veniam nisi dolorem reprehenderit, quis incidunt exercitationem
-              minus.
+            <p class="project-description">
+              Your typical weather app but inspired by eggplants &#x1F346;
             </p>
             <a href="https://br3ndan-l8n.github.io/Weather-Dashboard-API/" class="project-link" target="_blank">View
               Site</a>
@@ -112,15 +111,13 @@
       </section>
       <!-- PROJECT 3 -->
       <section class="row individual-project-section">
-        <h3 class="col-sm-12">Work Day Scheduler</h3>
+        <h3 class="col-sm-12 project-title">Work Day Scheduler</h3>
         <div class="row">
           <img class="project-image col-sm-12 col-md-5" src="assets/Images/WorkDayScheduler.png"
             alt="Preview of Work Day Scheduler app." />
           <div class="project-links col-sm-12 col-md-7">
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, nam fuga! Odit quos ipsam numquam debitis
-              molestias cum iure, consectetur qui aut, veniam nisi dolorem reprehenderit, quis incidunt exercitationem
-              minus.
+            <p class="project-description">
+              Scheduler for the work day! Enter a start time and be presented with 9, 1-hour, blocks. Easily keep track of your current, past, and future tasks with dynamic time-block-coloring. Unfortunately you're limited to a 9-hour work day, but I call that a feature #WorkLifeBalance!
             </p>
             <a href="https://br3ndan-l8n.github.io/Day-Calendar/" class="project-link" target="_blank">View Site</a>
             <span> | | </span>

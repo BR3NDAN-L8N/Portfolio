@@ -11,9 +11,10 @@
 body {
     font-size: medium;
     background-color: var(--my-blue);
+}
 
-    
-    
+img, .project-image {
+    border-radius: 5px;
 }
 
 
@@ -32,6 +33,12 @@ header nav {
 }
 header nav a, header nav div ul li a {
     cursor: pointer;
+}
+#collapsibleNavbar {
+    color: var(--my-orange);
+}
+.nav-bar-link:hover, .navbar-nav li>a:focus, .navbar-nav li.nav-item.active {
+    color:var(--my-orange);
 }
 
 
@@ -53,7 +60,7 @@ p {
 main article section hr{
     height: 3px;
     width: 100%;
-    margin: 10px 0px 20px;
+    margin: 20px 0px 100px;
     border-color: var(--my-orange);
     text-align: center;
     border-width: 1px;
@@ -68,7 +75,7 @@ main article {
     padding: 110px 100px;
 }
 main article:nth-child(odd) {
-    background-color: #210e5e;
+    background-color: #1d0d58;
 }
 
 
@@ -95,8 +102,14 @@ img.project-image {
 }
 
 section.individual-project-section {
-    margin: 50px 0px;
-    padding: 20px 0px;
+    margin: 0px 0px 75px;
+    padding: 0px 0px 25px;
+}
+h3.project-title {
+    margin-bottom: 30px;
+}
+p.project-description{
+    margin: 20px 0px;
 }
 div.project-links {
     text-align: center;
@@ -146,7 +159,7 @@ input[type=submit] {
         color: #ffffff;
     }
     img {
-        height: 200px;
+        height: auto;
         width: 300px;
     }
 }
