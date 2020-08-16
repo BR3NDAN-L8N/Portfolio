@@ -13,7 +13,7 @@ body {
     background-color: var(--my-blue);
 }
 
-img, .project-image {
+img {
     border-radius: 5px;
 }
 
@@ -66,13 +66,13 @@ main article section hr{
     border-width: 1px;
 }
 .row, .container{
-    margin: auto 0px;
-    padding: auto 0px;
+    margin: 0px 0px;
+    padding: 0px 0px;
 }
 main article {
     color: var(--my-orange);
     background-color: var(--my-blue);
-    padding: 110px 100px;
+    padding: 0px 100px 0px;
 }
 main article:nth-child(odd) {
     background-color: #1d0d58;
@@ -103,12 +103,8 @@ h1.hero-title {
 /* 
     PROJECT ARTICLE - can't find something? check @Media at bottom
 */
-img.project-image {
-    border-radius: 5px;
-}
-
 section.individual-project-section {
-    margin: 0px 0px 75px;
+    margin: 0px 0px 100px;
     padding: 0px 0px 25px;
 }
 h3.project-title {
@@ -116,6 +112,17 @@ h3.project-title {
 }
 p.project-description{
     margin: 20px 0px;
+}
+div.project-technologies-used{
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+}
+ul.technologies-list {
+    padding-left: 20px;
+}
+ul.technologies-list li {
+    list-style: none;
 }
 div.project-links {
     text-align: center;
@@ -133,6 +140,10 @@ a.project-link:hover {
 /* 
     ABOUT ARTICLE - can't find something? check @Media at bottom
 */
+article#about {
+    padding-top: 0px;
+    margin-top: 0px;
+}
 img.about-image {
     width: 100%;
     height: auto;
@@ -166,13 +177,17 @@ input[type=submit] {
     }
     img {
         height: auto;
-        width: 300px;
+        width: 100%;
     }
 }
 
 @media (max-width: 991px) {
-    h1, h2, h3, h4, h5, h6 {
+    h1, h2, h3, h5, h6 {
         text-align: center;
+        color: #ffffff;
+    }
+    h4 {
+        
         color: #ffffff;
     }
     img {
