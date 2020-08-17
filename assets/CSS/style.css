@@ -76,7 +76,7 @@ main article section hr{  /* Horizontal Rule for each section under header, Abou
 main article {
     color: var(--my-orange);
     background-color: var(--my-blue);
-    padding: 0px 10vw 0px;
+    padding: 15vh 10vw;
 }
 main article:nth-child(odd) {
     background-color: #1d0d58;
@@ -118,6 +118,10 @@ section.individual-project-section {
     margin: 0px 0px 100px;
     padding: 0px 0px 25px;
 }
+section.project-3 {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
 h3.project-title {
     margin-bottom: 30px;
 }
@@ -151,10 +155,6 @@ a.project-link:hover {
 /* 
     ABOUT ARTICLE - can't find something? check @Media at bottom
 */
-article#about {
-    padding-top: 0px;
-    margin-top: 0px;
-}
 img.about-image {
     width: 100%;
     height: auto;
