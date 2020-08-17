@@ -99,7 +99,7 @@ article.hero svg.logo {
 }
 h1.hero-title {
     position: absolute;
-    top: 65%;
+    top: 66%;
     left: 50%;
     transform: translate(-50%, -50%)
 }
@@ -210,7 +210,7 @@ input[type=submit] {
 @media (min-width: 500px) {
     h1.hero-title {
         position: absolute;
-        top: 65%;
+        top: 67%;
         left: 50%;
         transform: translate(-50%, -50%)
     }
