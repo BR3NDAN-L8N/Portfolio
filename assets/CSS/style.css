@@ -4,109 +4,166 @@
     --my-pink: #e23ced;
 }
 
+
+/* 
+    STYLE ALL ELEMENTS
+*/
 * {
     padding: 0px;
     margin: 0px;
+    box-sizing: border-box;
 }
-
-body, html {
-    height: 100%;
-    margin: 0;
-    padding: 0px;
-    font-size: large;
-    
-}
-
 body {
-    background-image: url(../Images/index-hero.jpeg);
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+    font-size: medium;
+    background-color: var(--my-blue);
 }
 
+img {
+    border-radius: 5px;
+}
+.row, .container{
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+h2 {
+    font-size: 3em;
+}
+p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+
+/* 
+    NAV-BAR - can't find something? check @Media at bottom
+*/
 header nav {
     margin: 0px;
-    background-color: #120148;
-}
-
-header nav a.navbar-brand {
-    color: var(--my-orange);
-}
-
-header nav a span.logo-brackets {
-    color: var(--my-pink);
+    background-color: var(--my-blue);
+    border-bottom: 2px solid black;
+    font-size: 18px;
 }
 .img-logo {
     width: auto;
     height: 45px;
 }
-
-main.container {
-    padding: 0;
+header nav a, header nav div ul li a {
+    cursor: pointer;
+}
+#collapsibleNavbar {
+    color: var(--my-orange);
+}
+.nav-bar-link:hover, .navbar-nav li>a:focus, .navbar-nav li.nav-item.active {
+    color:var(--my-orange);
 }
 
-main article.card {
-    padding: 30px;
-}
 
-h1, h2, h3, h4, h5, h6 {
-    color: #ffffff;
+/* 
+    MAIN - can't find something? check @Media at bottom
+*/
+main {
+    padding-top: 30px;
+    width: 100%;
 }
-p {
-    text-align: justify;
-  text-justify: inter-word;
-}
-
-/* From left to right, Index/About, Portfolio, Contact */
-main article section div hr, main div hr, main form div hr {
+main article section hr{  /* Horizontal Rule for each section under header, About, Portfolio, Contact */
     height: 3px;
     width: 100%;
-    margin: 10px 0px 20px;
+    margin: 20px 0px 100px;
     border-color: var(--my-orange);
     text-align: center;
     border-width: 1px;
 }
-
-main article.card {
-    margin: 100px 20px -40px;
+main article {
     color: var(--my-orange);
     background-color: var(--my-blue);
-    padding: 10px;
+    padding: 15vh 10vw;
+}
+main article:nth-child(odd) {
+    background-color: #1d0d58;
 }
 
-main article section div div div figure img {
-    border-radius: 5px;
+
+/* 
+    HERO ARTICLE - can't find something? check @Media at bottom
+*/
+article.hero {
+    height: 100vh;
+}
+article.hero svg.logo {
+    position: relative;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50vh;
+    width: 100%;
+}
+h1.hero-title {
+    position: absolute;
+    top: 66%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+h1.hero-sub-title {
+    font-size: 16px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%)
 }
 
-
-
-/* From right to left: Index/About, Portfolio */
-main article section.card-body, main div div div section div.card-body {
-    background-color: var(--my-blue);
+/* 
+    PROJECT ARTICLE - can't find something? check @Media at bottom
+*/
+section.individual-project-section {
+    margin: 0px 0px 100px;
+    padding: 0px 0px 25px;
 }
-
-/* Index/About only */
-/* main article section div div div p.card-text {
-    margin: auto 15px;
-} */
-
-/* Links */
-/* Navbar on all pages */
-header nav a, header nav div ul li a,
-/* Portfolio Only*/
-main div div div section div div a {
+section.project-3 {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+h3.project-title {
+    margin-bottom: 30px;
+}
+p.project-description{
+    margin: 20px 0px;
+}
+div.project-technologies-used{
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+}
+ul.technologies-list {
+    padding-left: 20px;
+}
+ul.technologies-list li {
+    list-style: none;
+}
+div.project-links {
+    text-align: center;
+}
+a.project-link {
     cursor: pointer;
     color: var(--my-pink);
+    text-decoration-line: none;
+}
+a.project-link:hover {
+    color: var(--my-orange);
 }
 
-/* From left to right: Index/About && Portfolio, Portfolio, Contact */
-main article.card, main div div div section div.card  {
-    border: 2px ridge var(--my-orange);
-    border-radius: 5px;
+
+/* 
+    ABOUT ARTICLE - can't find something? check @Media at bottom
+*/
+img.about-image {
+    width: 100%;
+    height: auto;
 }
 
-/* Form selectors present on Contact only */
+
+/* 
+    CONTACT FORM - can't find something? check @Media at bottom
+*/
 input, textarea {
     margin: 0px auto 25px;
 }
@@ -119,38 +176,49 @@ input[type=submit] {
     border-radius: 4px;
     cursor: pointer;
     float: left;
-  }
-/* End of Form selectors */
-
-
-@media (min-width: 992px) {
-    main div div div section div img {
-        height: 200px;
-        width: 300px;
-    }
-    /* Portfolio nested cards */
-    main div div div section div.card {
-        margin: 20px auto;
-        height: 100%;
-    }
-    
-    /* main div div div section div img.horiseon-image {
-        height: 20vw;
-        width: 100%;
-        object-fit: cover;
-    } */
 }
 
 
-
-  @media (max-width: 991px) {
-      main div div div section div img {
-          height: 200px;
-          width: 300px;
-      }
-      /* Portfolio nested cards */
-    main div div div section div.card {
-        margin: 20px 0px;
+/* 
+    MEDIA QUERIES
+*/
+@media (min-width: 992px) {
+    h1, h2, h3, h4, h5, h6 {
+        color: #ffffff;
     }
-  }
+    img {
+        height: auto;
+        width: 100%;
+    }
+}
 
+@media (max-width: 991px) {
+    h1, h2, h3, h5, h6 {
+        text-align: center;
+        color: #ffffff;
+    }
+    h4 {
+        
+        color: #ffffff;
+    }
+    img {
+        height: auto;
+        width: 100%;
+    }
+}
+
+@media (min-width: 500px) {
+    h1.hero-title {
+        position: absolute;
+        top: 67%;
+        left: 50%;
+        transform: translate(-50%, -50%)
+    }
+    h1.hero-sub-title {
+        font-size: 16px;
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%)
+    }
+}
