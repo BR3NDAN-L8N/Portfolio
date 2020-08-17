@@ -3,6 +3,11 @@
     --my-orange: #fccf68;
     --my-pink: #e23ced;
 }
+
+
+/* 
+    STYLE ALL ELEMENTS
+*/
 * {
     padding: 0px;
     margin: 0px;
@@ -15,6 +20,17 @@ body {
 
 img {
     border-radius: 5px;
+}
+.row, .container{
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+h2 {
+    font-size: 3em;
+}
+p {
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 
@@ -49,15 +65,7 @@ main {
     padding-top: 30px;
     width: 100%;
 }
-h2 {
-    font-size: 3em;
-}
-p {
-    text-align: justify;
-    text-justify: inter-word;
-}
-/* Horizontal Rule for each section, About, Portfolio, Contact */
-main article section hr{
+main article section hr{  /* Horizontal Rule for each section under header, About, Portfolio, Contact */
     height: 3px;
     width: 100%;
     margin: 20px 0px 100px;
@@ -65,14 +73,10 @@ main article section hr{
     text-align: center;
     border-width: 1px;
 }
-.row, .container{
-    margin: 0px 0px;
-    padding: 0px 0px;
-}
 main article {
     color: var(--my-orange);
     background-color: var(--my-blue);
-    padding: 0px 100px 0px;
+    padding: 0px 10vw 0px;
 }
 main article:nth-child(odd) {
     background-color: #1d0d58;
@@ -87,15 +91,22 @@ article.hero {
 }
 article.hero svg.logo {
     position: relative;
-    top: 25%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 75vh;
+    height: 50vh;
     width: 100%;
 }
 h1.hero-title {
     position: absolute;
-    top: 75%;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+h1.hero-sub-title {
+    font-size: 16px;
+    position: absolute;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%)
 }
@@ -196,8 +207,18 @@ input[type=submit] {
     }
 }
 
-@media (max-width: 500px) {
-    main article {
-        padding: 110px 15px;
+@media (min-width: 500px) {
+    h1.hero-title {
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%)
+    }
+    h1.hero-sub-title {
+        font-size: 16px;
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%)
     }
 }
