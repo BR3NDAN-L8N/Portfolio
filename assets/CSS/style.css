@@ -165,13 +165,19 @@ img.about-image {
 /* 
     CONTACT FORM - can't find something? check @Media at bottom
 */
-input, textarea {
+input[type=text], textarea[type=text] {
     margin: 0px auto 25px;
+    color: var(--my-blue)!important;
+    background-color: #fccf68!important;
 }
-
+input::placeholder, textarea::placeholder {
+    color: #120148d0!important;
+}
 input[type=submit] {
     background-color: var(--my-pink);
-    color: white;
+    color: var(--my-blue);
+    font-size: 24px;
+    letter-spacing: 1px;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
