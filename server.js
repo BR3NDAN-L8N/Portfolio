@@ -1,6 +1,6 @@
 // Requiring necessary npm packages
 const express = require("express");
-const session = require("express-session");
+const path = require("path");
 
 // Setting up port and requiring models for syncing
 const PORT = process.env.PORT || 8080;
@@ -8,6 +8,7 @@ const db = require("./models");
 
 // Creating express app
 const app = express();
+app.use(express.static(path.join(__dirname,'/public/')))
 
 // Set Handlebars.
 const exphbs = require("express-handlebars");
