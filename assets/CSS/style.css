@@ -160,6 +160,9 @@ img.about-image {
     width: 100%;
     height: auto;
 }
+section.personal-interests {
+    margin: 40px;
+}
 
 
 /* 
