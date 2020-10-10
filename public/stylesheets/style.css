@@ -33,6 +33,9 @@ p {
     text-justify: inter-word;
     text-indent: 48px;
 }
+li {
+    list-style: none;
+}
 
 
 /* 
@@ -160,8 +163,23 @@ img.about-image {
     width: 100%;
     height: auto;
 }
-.tech-skill-list {
-    /* margin: 0px 10vw; */
+article#about section.personal-interests div h3 {
+    text-align: center;
+}
+section.technical-skills {
+    margin: 100px 0px;
+}
+section.technical-skills h3{
+    margin: 25px 0px 50px;
+}
+div.tech-skill-list {
+    text-align: center;
+}
+ul.skill-list li{
+    list-style: none;
+}
+ul.interest-list {
+    text-align: center;
 }
 
 
