@@ -18,8 +18,13 @@ $('document').ready(function () {
     const emailData = {
       email: $("#email"),
       name: $("#name"),
-      message: $("")
+      message: $("#form-message")
     }
+
+    $.post("/email/send-email", emailData)
+      .catch((err) => {
+        console.log(err);
+      });
   })
 
 })

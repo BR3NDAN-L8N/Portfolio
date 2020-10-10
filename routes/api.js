@@ -1,14 +1,10 @@
 // Requiring path to so we can use relative routes to our HTML files
-const path = require("path");
+const sendEmail = require("../config/email-orm");
 
-module.exports = function(app) {
+module.exports = function (app) {
+    app.post("/email/send-email", (req, res) => {
 
-//   app.get("/", (req, res) => {
-//       res.render("about");
-//   });
-
-//   app.get("/projects", (req, res) => {
-//     res.render("projects");
-//   });
-
+        sendEmail.toAdmin(req.body);
+        sendEmail.toUser(req.body);
+    });
 };
