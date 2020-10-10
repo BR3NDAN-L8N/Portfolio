@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
     <link rel="stylesheet" href="./stylesheets/style.css" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <script src="./js/index.js"></script>
@@ -74,27 +76,52 @@
         <h1 class="hero-title">Brendan Leighton</h1>
         <h1 class="hero-sub-title">FULL-STACK ENGINEER</h1>
     </article>
-    <article class="message-overlay">
-
-    </article>
     <!-- HEADER -->
 
     {{{ body }}}
 
     <!-- FOOTER -->
-    <footer id="social-media">
-        <div>Brendan Leighton © 2020</div>
+    <footer>
+        {{!-- SOCIAL MEDIA --}}
+        <article class="social-media d-flex justify-content-center">
+            <a href="https://www.linkedin.com/in/brendan-leighton/" target="_blank"><i
+                    class="fab fa-linkedin fa-2x"></i></a>
+            <a href="https://github.com/BR3NDAN-L8N" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a>
+        </article>
+        <div class="copyright">Brendan Leighton © 2020</div>
         <br />
+
         <!-- 
             CONTACT SECTION
        -->
-        <article id="contact">
-            <h2>Contact Me</h2>
-            <a href="https://www.linkedin.com/in/brendan-leighton/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/BR3NDAN-L8N" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-            <a href="mailto:BR3NDAN.L8N@gmail.com" target="_blank"><i class="far fa-envelope"></i></a>
-        </article>
+        <button class="btn email-button">
+            <i class="far fa-envelope fa-2x"></i>
+        </button>
+        {{!-- <a href="mailto:BR3NDAN.L8N@gmail.com" target="_blank"><i class="far fa-envelope fa-2x"></i></a> --}}
+        <form action="#" class="email-form hide">
+            <button class="exit-button">CLOSE</button>
+            <div class="row">
+                <!-- Name and Email forms -->
+                <section class="col-md-6">
+                    <label for="name">Your Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="John Smith" name="name" />
+                </section>
+                <section class="col-md-6">
+                    <label for="email">Your Email</label>
+                    <input type="text" class="form-control" id="email" placeholder="Example@email.com" name="email" />
+                </section>
+            </div>
+            <div class="row">
+                <!-- Message and Submit button -->
+                <section class="col-sm-12">
+                    <label for="form-message">Message</label>
+                    <textarea type="text" class="form-control" rows="7" id="form-message"
+                        placeholder="Tell me something about my eyes..." name="email"></textarea>
+                    <input type="submit" value="Submit" class=" col-sm-12 text-uppercase font-weight-bold">
+                </section>
+            </div>
+        </form>
     </footer>
     <!-- FOOTER -->
 </body>

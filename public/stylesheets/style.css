@@ -36,6 +36,9 @@ p {
 li {
     list-style: none;
 }
+.hide {
+    display: none;
+}
 
 
 /* 
@@ -182,10 +185,61 @@ ul.interest-list {
     text-align: center;
 }
 
+/* 
+    FOOTER
+*/
+article.social-media a {
+    padding: 5vw;
+    color: var(--my-pink);
+}
+div.copyright {
+    text-align: center;
+    color: var(--my-orange);
+}
+button.email-button {
+    position: fixed;
+    bottom: 2vh;
+    right: 2vw;
+    color: var(--my-blue);
+    border: 0px solid white;
+    border-radius: 50% 50% 15% 50%;
+    background-color: var(--my-pink);
+}
+button.email-button:hover {
+    background-color: var(--my-orange);
+}
 
 /* 
     CONTACT FORM - can't find something? check @Media at bottom
 */
+form.email-form {
+    z-index: 2;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 0px;
+    padding: 2vh 0vw;;
+    background-color: var(--my-blue);
+    color: white;
+    border-radius: 25px;
+}
+form button.exit-button {
+    display: block;
+    z-index: 3;
+    position: absolute;
+    top: 3px;
+    right: 15px;
+    padding: 5px 8px;
+    width: auto;
+    height: auto;
+    border: 0px solid white;
+    border-radius: 4px;
+    background-color: var(--my-pink);
+    color: var(--my-blue);
+}
+form button.exit-button:hover {
+    background-color: var(--my-orange);
+}
 input[type=text], textarea[type=text] {
     margin: 0px auto 25px;
     color: var(--my-blue)!important;
@@ -232,6 +286,10 @@ input[type=submit] {
     img {
         height: auto;
         width: 100%;
+    }
+    form.email-form {
+        height: 90vh;
+        width: 100vw;
     }
 }
 
