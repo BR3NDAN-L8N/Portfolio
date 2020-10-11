@@ -33,6 +33,12 @@ p {
     text-justify: inter-word;
     text-indent: 48px;
 }
+li {
+    list-style: none;
+}
+.hide {
+    display: none;
+}
 
 
 /* 
@@ -160,14 +166,94 @@ img.about-image {
     width: 100%;
     height: auto;
 }
-section.personal-interests {
-    margin: 40px;
+article#about section.personal-interests div h3 {
+    text-align: center;
+}
+section.technical-skills {
+    margin: 100px 0px;
+}
+section.technical-skills h3{
+    margin: 25px 0px 50px;
+}
+div.tech-skill-list {
+    text-align: center;
+}
+ul.skill-list li{
+    list-style: none;
+}
+ul.interest-list {
+    text-align: center;
 }
 
+/* 
+    FOOTER
+*/
+article.social-media a {
+    padding: 5vw;
+    color: var(--my-pink);
+}
+div.copyright {
+    text-align: center;
+    color: var(--my-orange);
+}
+button.email-button {
+    position: fixed;
+    bottom: 2vh;
+    right: 2vw;
+    color: var(--my-blue);
+    border: 0px solid white;
+    border-radius: 50% 50% 15% 50%;
+    background-color: var(--my-pink);
+}
+button.email-button:hover {
+    background-color: var(--my-orange);
+}
 
 /* 
     CONTACT FORM - can't find something? check @Media at bottom
 */
+form.email-form, .email-sent-success-modal {
+    z-index: 2;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 0px;
+    padding: 2vh 0vw;;
+    background-color: var(--my-blue);
+    color: white;
+    border-radius: 25px;
+    border: 1px solid white;
+}
+.email-sent-success-modal {
+    padding: 30px 3px 10px;
+}
+h3.email-modal-header {
+    text-align: center;
+    margin-top: 3vh;
+}
+p.email-modal-text {
+    padding: 10vh 5vw;
+    text-align: start;
+    text-justify: none;
+    text-indent: 0px;
+}
+form button.exit-button, .exit-button-modal {
+    display: block;
+    z-index: 3;
+    position: absolute;
+    top: 3px;
+    right: 15px;
+    padding: 5px 8px;
+    width: auto;
+    height: auto;
+    border-radius: 4px;
+    background-color: var(--my-pink);
+    border: 0px solid white;
+    color: var(--my-blue);
+}
+form button.exit-button:hover, .exit-button-modal:hover {
+    background-color: var(--my-orange);
+}
 input[type=text], textarea[type=text] {
     margin: 0px auto 25px;
     color: var(--my-blue)!important;
@@ -214,6 +300,13 @@ input[type=submit] {
     img {
         height: auto;
         width: 100%;
+    }
+    form.email-form {
+        height: 90vh;
+        width: 100vw;
+    }
+    .email-sent-success-modal {
+        height: 50vh;
     }
 }
 
