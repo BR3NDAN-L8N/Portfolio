@@ -24,7 +24,7 @@
 
 ## Finished Project
 
-Project Link: [https://br3ndan-l8n.github.io/ResponsiveBootstrapPortfolio/](https://br3ndan-l8n.github.io/Portfolio/)
+Project Link: [brendanleighton.com/](https://brendanleighton.com/)
 
 ## Project Screenshot
 
