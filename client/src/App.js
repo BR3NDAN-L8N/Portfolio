@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+ import About from "./pages/about";
+// import Detail from "./pages/Detail";
+// import NoMatch from "./pages/NoMatch";
+ import Navbar from "./components/navbar/index";
+ import Footer from "./components/footer/index";
+// import { StoreProvider } from "./utils/GlobalState";
+// import FavoritesList from "./pages/FavoritesList";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div>
+<Navbar />
+         
+          <Switch>
+              <Route exact path="/" component={About} />
+           {/*<Route exact path="/home" component={Home} />
+            <Route exact path="/favorites" component={FavoritesList} />
+            <Route exact path="/posts/:id" component={Detail} />
+            <Route component={NoMatch} /> */}
+          </Switch>
+<Footer />
+      </div>
+    </Router>
   );
 }
 
