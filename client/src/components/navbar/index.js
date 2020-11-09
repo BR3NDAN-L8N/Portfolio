@@ -6,7 +6,7 @@ function Navbar() {
 
   return (
     <nav className="navbar navbar-expand-sm navbar-dark fixed-top" id="navbar">
-      <a className="navbar-brand" href="index.html">
+      <a className="navbar-brand" href="/">
         Brendan Leighton
             </a>
 
