@@ -1,26 +1,24 @@
+// 
+// REACT imports
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
+// 
+// CUSTOM imports
 import About from "./pages/about";
-// import Detail from "./pages/Detail";
-// import NoMatch from "./pages/NoMatch";
+import Projects from './pages/projects';
 import Navbar from "./components/navbar/index";
 import Footer from "./components/footer/index";
 import Email from "./components/email/index";
-// import { StoreProvider } from "./utils/GlobalState";
-// import FavoritesList from "./pages/FavoritesList";
 
-function App() {
+export default function App() {
   return (
     <Router>
       <div>
         <Navbar />
-
         <Switch>
           <Route exact path="/" component={About} />
-          {/*<Route exact path="/home" component={Home} />
-            <Route exact path="/favorites" component={FavoritesList} />
-            <Route exact path="/posts/:id" component={Detail} />
-            <Route component={NoMatch} /> */}
+          <Route exact path="/projects" component={Projects} />
         </Switch>
         <Email />
         <Footer />
@@ -28,5 +26,3 @@ function App() {
     </Router>
   );
 }
-
-export default App;
