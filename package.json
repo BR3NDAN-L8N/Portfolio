@@ -1,20 +1,24 @@
 {
   "name": "brendans-portfolio",
   "version": "5.0.0",
+  "engines": {
+    "node": "12.x",
+    "npm": "6.x"
+  },
   "description": "",
   "author": "",
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
-    "build:client": "cd client && ng build --prod --output-path=../dist/client",
-    "build:server": "cd server && npm run webpack",
-    "build": "concurrently \" npm run build:server \" \" npm run build:client \" ",
+    "start": "npm run start:prod --prefix server",
+    "build:client": "npm run build:dev --prefix client",
+    "build:server": "npm run build --prefix server",
+    "build": "npm run build:server & npm run build:client",
+    "build:dev": "npm run build:server & npm run build:client",
     "start:client": " cd client && npm start",
-    "start:server": " cd server && npm start",
-    "start": "concurrently \" npm run start:server \" \" npm run start:client \" ",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "dependencies": {
-    "concurrently": "^5.3.0"
+    "start:server": "cd server && npm run start:dev",
+    "start:dev": "npm run build:dev && npm run start:server & npm run start:client",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "npm install --prefix client && npm install --prefix server"
   }
 }
