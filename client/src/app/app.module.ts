@@ -14,6 +14,8 @@ import { TestComponent } from './test/test.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
+import { ProjectCardComponent } from './components/project-card/project-card.component';
+import { ProjectMoreInfoComponent } from './components/project-more-info/project-more-info.component';
 
 @NgModule({
     declarations: [
@@ -21,7 +23,9 @@ import { ProjectsComponent } from './pages/projects/projects.component';
         TestComponent,
         NavBarComponent,
         AboutComponent,
-        ProjectsComponent
+        ProjectsComponent,
+        ProjectCardComponent,
+        ProjectMoreInfoComponent
     ],
     imports: [
         BrowserModule,

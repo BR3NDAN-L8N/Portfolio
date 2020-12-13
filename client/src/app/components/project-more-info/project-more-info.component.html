@@ -1,0 +1,47 @@
+<section *ngFor="let project of projects">
+    <h3>{{ project.title }}</h3>
+    <div class="row">
+        <!-- <figure>
+            <img 
+            src="assets/Images/{{ project.image }}.png"
+            alt="Preview of the application's home page." 
+            />
+        </figure> -->
+        <span>Image goes here = {{ project.image }}</span>
+        <div>
+            <div>
+                <h4>Technologies Used</h4>
+                <ul>
+                    <li *ngFor="technology of project.technologies">{{ technology }}</li>
+                    <li>Basic: HTML, CSS, Javascript</li>
+                    <li>JQuery</li>
+                    <li>Node.js</li>
+                    <li>Axios</li>
+                    <li>Express.js</li>
+                    <li>Express-Handlebars</li>
+                    <li>Sequelize</li>
+                    <li>SendGrid</li>
+                    <li>MySQL</li>
+                </ul>
+            </div>
+        </div>
+        <p>
+            {{ project.description }}
+        </p>
+        <p class="project-description col-12">
+            This is a group project with myself and 5 others. My main responsibility was implementing email
+            messaging
+            for users to connect, using SendGrid with Handlebars templates. Initially I added basic template
+            code to
+            get
+            us up and running. At the end I converted the HTML for the front-end to Express-Handlebars.
+        </p>
+        <div class="project-links col-12">
+            <a href="{{ project.liveLink }}" class="project-link" target="_blank">View
+                Site</a>
+            <span>||</span>
+            <a href="{{ project.codeLink }}" class="project-link" target="_blank">View
+                Code</a>
+        </div>
+    </div>
+</section>
