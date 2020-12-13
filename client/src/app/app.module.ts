@@ -5,6 +5,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // MATERIAL
 import { AngularMaterialModule } from './modules/angular-material.module';
 
+//  LOCAL STORAGE
+import { UserSessionStorageService } from "./services/webstorage.service";
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TestComponent } from './test/test.component';
@@ -26,7 +29,9 @@ import { ProjectsComponent } from './pages/projects/projects.component';
         BrowserAnimationsModule,
         AngularMaterialModule
     ],
-    providers: [],
+    providers: [
+        UserSessionStorageService
+    ],
     bootstrap: [AppComponent]
 })
 export class AppModule { }
