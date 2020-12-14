@@ -1,5 +1,5 @@
 :root {
-    --my-blue: #120148;
+    --my-blue: #000000;
     --my-orange: #fccf68;
     --my-pink: #e23ced;
 }
@@ -32,6 +32,7 @@ p {
     text-align: justify;
     text-justify: inter-word;
     text-indent: 48px;
+    color: var(--my-orange);
 }
 li {
     list-style: none;
@@ -47,7 +48,7 @@ li {
 header nav {
     margin: 0px;
     background-color: var(--my-blue);
-    border-bottom: 2px solid black;
+    border-bottom: 1px solid var(--my-orange);
     font-size: 18px;
 }
 .img-logo {
@@ -59,6 +60,9 @@ header nav a, header nav div ul li a {
 }
 #collapsibleNavbar {
     color: var(--my-orange);
+}
+.nav-bar-link{
+    color: var(--my-pink);
 }
 .nav-bar-link:hover, .navbar-nav li>a:focus, .navbar-nav li.nav-item.active {
     color:var(--my-orange);
@@ -85,9 +89,9 @@ main article {
     background-color: var(--my-blue);
     padding: 15vh 10vw;
 }
-main article:nth-child(odd) {
+/* main article:nth-child(odd) {
     background-color: #1d0d58;
-}
+} */
 
 
 /* 
@@ -98,7 +102,7 @@ article.hero {
 }
 article.hero svg.logo {
     position: relative;
-    top: 30%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     height: 50vh;
@@ -106,16 +110,17 @@ article.hero svg.logo {
 }
 h1.hero-title {
     position: absolute;
-    top: 66%;
+    top: 75%;
     left: 50%;
     transform: translate(-50%, -50%)
 }
-h1.hero-sub-title {
-    font-size: 16px;
-    position: absolute;
+p.hero-sub-title {
+    font-size: 24px;
+    margin: 0vh 10vw 20vh 10vw;
+    /* position: absolute;
     top: 80%;
     left: 50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%) */
 }
 
 /* 
@@ -307,21 +312,22 @@ input[type=submit] {
     }
     .email-sent-success-modal {
         height: 50vh;
+        width: 50vw;
     }
 }
 
 @media (min-width: 500px) {
-    h1.hero-title {
+    /* h1.hero-title {
         position: absolute;
         top: 67%;
         left: 50%;
         transform: translate(-50%, -50%)
-    }
-    h1.hero-sub-title {
+    } */
+    /* h1.hero-sub-title {
         font-size: 16px;
         position: absolute;
         top: 80%;
         left: 50%;
         transform: translate(-50%, -50%)
-    }
+    } */
 }
