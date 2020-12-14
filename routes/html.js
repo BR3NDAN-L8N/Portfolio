@@ -1,14 +1,18 @@
 // Requiring path to so we can use relative routes to our HTML files
 const path = require("path");
 
-module.exports = function(app) {
+module.exports = function (app) {
 
-  app.get("/", (req, res) => {
-      res.render("about");
-  });
+    app.get("/", (req, res) => {
+        res.render("home");
+    });
 
-  app.get("/projects", (req, res) => {
-    res.render("projects");
-  });
+    app.get("/projects", (req, res) => {
+        res.render("projects");
+    });
+
+    app.get("/about", (req, res) => {
+        res.render("about");
+    });
 
 };
