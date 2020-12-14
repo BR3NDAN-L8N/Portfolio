@@ -15,9 +15,29 @@
 }
 body {
     font-size: medium;
+    color: var(--my-orange);
     background-color: var(--my-blue);
 }
-
+main {
+    padding: 0vh 10vw;
+    margin-top: 55px;
+    width: 100%;
+}
+header.page-header {
+    padding: 15vh 0px 15vh;
+}
+header.page-header hr{  /* Horizontal Rule for each section under header, About, Portfolio, Contact */
+    width: 100%;
+    margin: 20px 10vw 0px;
+    border-color: var(--my-orange);
+    border-width: 1px;
+}
+article.row, article.home-call-to-action {
+    padding-bottom: 15vh;
+}
+article header {
+    margin-bottom: 7vh;
+}
 img {
     border-radius: 5px;
 }
@@ -25,14 +45,18 @@ img {
     margin: 0px 0px;
     padding: 0px 0px;
 }
-h2 {
-    font-size: 3em;
+h1, h2, h3, h4, h5, h6 {
+        text-align: center;
+        color: #ffffff;
 }
 p {
     text-align: justify;
     text-justify: inter-word;
-    text-indent: 48px;
+    text-indent: 24px;
     color: var(--my-orange);
+}
+p.intro {
+    font-size: 150%;
 }
 li {
     list-style: none;
@@ -40,7 +64,6 @@ li {
 .hide {
     display: none;
 }
-
 
 /* 
     NAV-BAR - can't find something? check @Media at bottom
@@ -65,38 +88,33 @@ header nav a, header nav div ul li a {
     color: var(--my-pink);
 }
 .nav-bar-link:hover, .navbar-nav li>a:focus, .navbar-nav li.nav-item.active {
-    color:var(--my-orange);
+    color: white;
 }
-
 
 /* 
-    MAIN - can't find something? check @Media at bottom
+    HOME/LANDING PAGE - can't find something? check @Media at bottom
 */
-main {
-    padding-top: 30px;
-    width: 100%;
+article.home-call-to-action {
+    padding-top: 0px;
 }
-main article section hr{  /* Horizontal Rule for each section under header, About, Portfolio, Contact */
-    height: 3px;
-    width: 100%;
-    margin: 20px 0px 100px;
-    border-color: var(--my-orange);
+div.cta-or {
     text-align: center;
-    border-width: 1px;
+    font-size: 24px;
+    margin-bottom: 15px;
 }
-main article {
-    color: var(--my-orange);
-    background-color: var(--my-blue);
-    padding: 15vh 10vw;
+a.cta-links {
+    color: var(--my-pink);
+    border: 2px solid var(--my-pink);
+    border-radius: 15px;
 }
-/* main article:nth-child(odd) {
-    background-color: #1d0d58;
-} */
-
-
-/* 
-    HERO ARTICLE - can't find something? check @Media at bottom
-*/
+a.cta-links:hover {
+    text-decoration: none;
+    color: white;
+    border-color: white;
+}
+.cta-links, .cta-or {
+    padding: 5px;
+}
 article.hero {
     height: 100vh;
 }
@@ -109,18 +127,15 @@ article.hero svg.logo {
     width: 100%;
 }
 h1.hero-title {
+    font-size: 350%;
     position: absolute;
     top: 75%;
     left: 50%;
     transform: translate(-50%, -50%)
 }
 p.hero-sub-title {
-    font-size: 24px;
+    font-size: 150%;
     margin: 0vh 10vw 20vh 10vw;
-    /* position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%) */
 }
 
 /* 
@@ -167,18 +182,15 @@ a.project-link:hover {
 /* 
     ABOUT ARTICLE - can't find something? check @Media at bottom
 */
+/* header.page-header {
+    margin-top: 55px;
+} */
 img.about-image {
     width: 100%;
     height: auto;
 }
-article#about section.personal-interests div h3 {
+section#about section.personal-interests div h3 {
     text-align: center;
-}
-section.technical-skills {
-    margin: 100px 0px;
-}
-section.technical-skills h3{
-    margin: 25px 0px 50px;
 }
 div.tech-skill-list {
     text-align: center;
@@ -226,37 +238,40 @@ form.email-form, .email-sent-success-modal {
     padding: 2vh 0vw;;
     background-color: var(--my-blue);
     color: white;
-    border-radius: 25px;
+    border-radius: 5px;
     border: 1px solid white;
 }
+form.email-form {
+    height: 80vh;
+    width: 100vw;
+}
 .email-sent-success-modal {
-    padding: 30px 3px 10px;
+    padding: 5px 3px;
 }
 h3.email-modal-header {
     text-align: center;
-    margin-top: 3vh;
+    /* margin-top: 3vh; */
 }
 p.email-modal-text {
-    padding: 10vh 5vw;
-    text-align: start;
-    text-justify: none;
-    text-indent: 0px;
+    display: block;
+    text-align: center;
 }
-form button.exit-button, .exit-button-modal {
+button.exit-button, button.exit-button-modal {
     display: block;
     z-index: 3;
     position: absolute;
-    top: 3px;
-    right: 15px;
-    padding: 5px 8px;
-    width: auto;
-    height: auto;
-    border-radius: 4px;
+    top: 5px;
+    right: 5px;
+    padding: 1px 1px;
+    width: 3vh;
+    height: 3vh;
+    border-radius: 50%;
     background-color: var(--my-pink);
-    border: 0px solid white;
+    border: black 0px;
     color: var(--my-blue);
+    text-align: center;
 }
-form button.exit-button:hover, .exit-button-modal:hover {
+button.exit-button:hover, button.exit-button-modal:hover {
     background-color: var(--my-orange);
 }
 input[type=text], textarea[type=text] {
@@ -283,51 +298,21 @@ input[type=submit] {
 /* 
     MEDIA QUERIES
 */
-@media (min-width: 992px) {
-    h1, h2, h3, h4, h5, h6 {
-        color: #ffffff;
-    }
-    img {
-        height: auto;
-        width: 100%;
-    }
-}
 
-@media (max-width: 991px) {
-    h1, h2, h3, h5, h6 {
-        text-align: center;
-        color: #ffffff;
-    }
-    h4 {
-        
-        color: #ffffff;
-    }
+/* DESKTOP */
+@media (min-width: 992px) {
     img {
         height: auto;
         width: 100%;
+    }
+    p.hero-sub-title {
+        font-size: 36px;
+        padding: 0px 20vw;
     }
     form.email-form {
-        height: 90vh;
-        width: 100vw;
+    width: 50vw;
     }
-    .email-sent-success-modal {
-        height: 50vh;
+    article.email-sent-success-modal {
         width: 50vw;
     }
-}
-
-@media (min-width: 500px) {
-    /* h1.hero-title {
-        position: absolute;
-        top: 67%;
-        left: 50%;
-        transform: translate(-50%, -50%)
-    } */
-    /* h1.hero-sub-title {
-        font-size: 16px;
-        position: absolute;
-        top: 80%;
-        left: 50%;
-        transform: translate(-50%, -50%)
-    } */
 }
