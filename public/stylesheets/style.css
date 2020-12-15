@@ -19,7 +19,7 @@ body {
     background-color: var(--my-blue);
 }
 main {
-    padding: 0vh 10vw;
+    padding: 0vh 5vw;
     margin-top: 55px;
     width: 100%;
 }
@@ -38,6 +38,9 @@ article.row, article.home-call-to-action {
 article header {
     margin-bottom: 7vh;
 }
+a {
+    cursor: pointer;
+}
 img {
     border-radius: 5px;
 }
@@ -55,8 +58,11 @@ p {
     text-indent: 24px;
     color: var(--my-orange);
 }
+p {
+    font-size: 110%;
+}
 p.intro {
-    font-size: 150%;
+    font-size: 120%;
 }
 li {
     list-style: none;
@@ -77,9 +83,6 @@ header nav {
 .img-logo {
     width: auto;
     height: 45px;
-}
-header nav a, header nav div ul li a {
-    cursor: pointer;
 }
 #collapsibleNavbar {
     color: var(--my-orange);
@@ -160,12 +163,6 @@ div.project-technologies-used{
     display: block;
     text-align: center;
 }
-ul.technologies-list {
-    padding-left: 20px;
-}
-ul.technologies-list li {
-    list-style: none;
-}
 div.project-links {
     text-align: center;
 }
@@ -200,6 +197,10 @@ ul.skill-list li{
 }
 ul.interest-list {
     text-align: center;
+}
+img.bootcamp-certificate {
+    width: 100%;
+    height: auto;
 }
 
 /* 
@@ -271,8 +272,15 @@ button.exit-button, button.exit-button-modal {
     color: var(--my-blue);
     text-align: center;
 }
+.exit-button-x{
+    position: relative;
+    top: -5px;
+  /* transform: translateY(-100%); */
+}
 button.exit-button:hover, button.exit-button-modal:hover {
-    background-color: var(--my-orange);
+    background-color: var(--my-blue);
+    color: var(--my-pink);
+    border: 1px solid var(--my-pink);
 }
 input[type=text], textarea[type=text] {
     margin: 0px auto 25px;
@@ -289,6 +297,17 @@ input[type=submit] {
     letter-spacing: 1px;
     padding: 12px 20px;
     border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: left;
+}
+input[type=submit]:hover {
+    background-color: var(--my-blue);
+    color: var(--my-pink);
+    font-size: 24px;
+    letter-spacing: 1px;
+    padding: 12px 20px;
+    border: 1px solid var(--my-pink);
     border-radius: 4px;
     cursor: pointer;
     float: left;
