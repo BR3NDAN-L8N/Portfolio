@@ -1,191 +1,160 @@
-<details>testing</details>
-
 <main>
 
     <!--  
           PROJECT SECTION
       -->
-    <article id="project">
-        <section class="row">
-            <h2 class="col-12">Portfolio</h2>
+    <section id="project">
+        <header class="row page-header">
+            <h1 class="col-12">Projects</h1>
             <hr />
-        </section>
+        </header>
+
+
         <!-- PROJECT 1 -->
-        <section class="row individual-project-section project-1">
-            <h3 class="col-sm-12 project-title">Outdoor Adventure Buddies</h3>
-            <div class="row">
-                <figure class="col-sm-12 col-md-6">
-                    <img class="project-image" src="assets/Images/OAB-Screenshot.png"
-                        alt="Preview of the application's home page." />
-                </figure>
-                <div class="col-sm-12 col-md-6">
-                    <div class="project-technologies-used">
-                        <h4>Technologies Used</h4>
+        <article class="row project-card">
+            <img class="col-md-6 card-img-top" src="assets/Images/safe-space-tiny.png" alt="Application preview">
+            <div class="col-md-6 card-body">
+                <h5 class="card-title">Safe Space</h5>
+                <p class="card-text">The ability to experience the world safely is not a luxury afforded to everyone.
+                    Members of the LGBTQ community rely on
+                    word-of-mouth to find businesses and resources to provide safe havens and community. One of the most
+                    frequent roadblocks
+                    is the decentralization of such information.
+                    Safe Space offers a unique platform that helps the LGBTQ community safely expand their orbit by
+                    connecting members with
+                    resources, businesses, and community.
+                </p>
+                <div class="row card-details">
+                    <details class="col-xs-12 col-lg-6 list-group list-group-flush">
+                        <summary>Technologies Used</summary>
                         <ul class="technologies-list">
-                            <li>Basic: HTML, CSS, Javascript</li>
-                            <li>JQuery</li>
-                            <li>Hiking Project API</li>
-                            <li>Node.js</li>
-                            <li>Axios</li>
-                            <li>Express.js</li>
-                            <li>Express-Handlebars</li>
-                            <li>Passport.js</li>
-                            <li>bcrypt</li>
-                            <li>Sequelize</li>
-                            <li>SendGrid</li>
-                            <li>MySQL</li>
+                            <li class="list-group-item">Angular</li>
+                            <li class="list-group-item">NestJS</li>
+                            <li class="list-group-item">Typescript</li>
+                            <li class="list-group-item">Mongo/Mongoose</li>
                         </ul>
-                    </div>
+                    </details>
+                    <details class="col-xs-12 col-lg-6 list-group list-group-flush">
+                        <summary>What I Did</summary>
+                        <ul class="project-role-list">
+                            <li class="list-group-item">
+                                Database querying.
+                            </li>
+                            <li class="list-group-item">
+                                Server-side routing.
+                            </li>
+                            <li class="list-group-item">
+                                Local Storage setup & saving user's data upon login and profile updates, for intra-app use.
+                            </li>
+                        </ul>
+                    </details>
                 </div>
-                <p class="project-description col-12">
-                    Throughout these unprecedented times one thing has remained clear, people want to get out and
-                    explore
-                    the
-                    outdoors! For these exact moments we created Outdoor Adventure Buddies. Our application allows users
-                    to
-                    create an account, search for hiking trails and best of all find buddies to hike with. Users can
-                    also
-                    save
-                    trails to their bucket list for future hikes as well as find and message new buddies for their
-                    future
-                    adventures!
-                </p>
-                <p class="project-description col-12">
-                    This is a group project with myself and 5 others. My main responsibility was implementing email
-                    messaging
-                    for users to connect, using SendGrid with Handlebars templates. Initially I added basic template
-                    code to
-                    get
-                    us up and running. At the end I converted the HTML for the front-end to Express-Handlebars.
-                </p>
-                <div class="project-links col-12">
-                    <a href="https://whispering-castle-57159.herokuapp.com/" class="project-link" target="_blank">View
-                        Site</a>
+                <div class="card-links">
+                    <a href="https://safe-space-ne.herokuapp.com/home" class="card-link" target="_blank">View
+                        Site
+                    </a>
                     <span>||</span>
-                    <a href="https://github.com/dylanbest15/Outdoor-Adventure-Buddies" class="project-link"
-                        target="_blank">View
-                        Code</a>
+                    <a href="https://github.com/macksm3/safe-space" class="card-link" target="_blank">View
+                        Code
+                    </a>
                 </div>
             </div>
-        </section>
+        </article>
+
+
         <!-- PROJECT 2 -->
-        <section class="row individual-project-section project-1">
-            <h3 class="col-sm-12 project-title">My COVID Tracker</h3>
-            <div class="row">
-                <figure class="col-sm-12 col-md-6">
-                    <img class="project-image" src="https://media.giphy.com/media/Vh9PHybWF4VsakZqi2/giphy.gif"
-                        alt="Preview gif of the My COVID Tracker website." />
-                </figure>
-                <div class="col-sm-12 col-md-6">
-                    <div class="project-technologies-used">
-                        <h4>Technologies Used</h4>
+        <article class="row project-card">
+            <img class="col-md-6 card-img-top" src="assets/Images/adventure-buddies-tiny.png" alt="Application preview">
+            <div class="col-md-6 card-body">
+                <h5 class="card-title">Outdoor Adventure Buddies</h5>
+                <p class="card-text">In these times, one thing remains clear; people want to get out and explore the
+                    outdoors! For these exact moments, we
+                    created Outdoor Adventure Buddies. Our application allows users to create an account, search for
+                    hiking trails, and find
+                    buddies to go hiking. Users can save trails to their bucket list and message new buddies for their
+                    future adventures!
+                </p>
+                <div class="row card-details">
+                    <details class="col-xs-12 col-lg-6 list-group list-group-flush">
+                        <summary>Technologies Used</summary>
                         <ul class="technologies-list">
-                            <li>Basic: HTML, CSS, Javascript</li>
-                            <li>JQuery</li>
-                            <li>New York Times API</li>
-                            <li>Coronavirus COVID19 API</li>
-                            <li>Materialize</li>
+                            <li class="list-group-item">Node.js</li>
+                            <li class="list-group-item">Express.js</li>
+                            <li class="list-group-item">Express-Handlebars</li>
+                            <li class="list-group-item">Vanilla Handlebars</li>
+                            <li class="list-group-item">SendGrid</li>
                         </ul>
-                    </div>
+                    </details>
+                    <details class="col-xs-12 col-lg-6 list-group list-group-flush">
+                        <summary>What I Did</summary>
+                        <ul class="project-role-list">
+                            <li class="list-group-item">Setup email communication using SendGrid.</li>
+                            <li class="list-group-item">Email templates with vanilla Handlebars.</li>
+                            <li class="list-group-item">Converted Client-Side HTML to Express-Handlebars.</li>
+                        </ul>
+                    </details>
                 </div>
-                <p class="project-description col-12">
-                    My COVID Tracker helps those seeking answers to keep up with the growing numbers and news about the
-                    current
-                    state of COVID-19. Search by country and find the current stats and news. Articles are pulled from
-                    the
-                    Wall
-                    Street Journal. If you find an article you want to save for later, click the save button and
-                    navigate to
-                    your archive and view it later. For statistics, you can find the total confirmed, active, and
-                    recovered
-                    cases, as well as deaths associated with COVID-19. Be sure to check the CDC guidelines for safe
-                    practices
-                    located on the bottom of each page!
-                </p>
-                <p class="project-description col-12">
-                    This is a group project with myself and 3 others. I was in charge of the NY Times API. I handled the
-                    ajax
-                    call and the saving/deleting aspect of the personal archive.
-                </p>
-                <div class="project-links col-12">
-                    <a href="https://cjlaflamme1.github.io/MyCovidTracker/" class="project-link" target="_blank">View
-                        Site</a>
+                <div class="card-links">
+                    <a href="https://whispering-castle-57159.herokuapp.com/" class="card-link" target="_blank">View
+                        Site
+                    </a>
                     <span>||</span>
-                    <a href="https://github.com/cjlaflamme1/MyCovidTracker" class="project-link" target="_blank">View
-                        Code</a>
+                    <a href="https://github.com/dylanbest15/Outdoor-Adventure-Buddies" class="card-link"
+                        target="_blank">View Code
+                    </a>
                 </div>
             </div>
-        </section>
+        </article>
+
+
         <!-- PROJECT 3 -->
-        <section class="row individual-project-section project-2">
-            <h3 class="col-sm-12 project-title">Weather Dashboard</h3>
-            <div class="row">
-                <figure class="col-sm-12 col-md-6">
-                    <img class="project-image" src="assets/Images/WeatherDashboard.png"
-                        alt="Preview of Weather Dashboard app." />
-                </figure>
-                <div class="col-sm-12 col-md-6">
-                    <div class="project-technologies-used">
-                        <h4>Technologies Used</h4>
+        <article class="row project-card">
+            <img class="col-md-6 card-img-top" src="assets/Images/my-covid-tracker-tiny.png" alt="Application preview">
+            <div class="col-md-6 card-body">
+                <h5 class="card-title">My COVID Tracker</h5>
+                <p class="card-text">
+                    Welcome to the one-stop-shop for all your COVID-19 related information. View up to date statistics from around the world
+                    and the most recent articles from the New York Times.
+                </p>
+                <div class="row card-details">
+                    <details class="col-xs-12 col-lg-6 list-group list-group-flush">
+                        <summary>Technologies Used</summary>
                         <ul class="technologies-list">
-                            <li>Basic: HTML, CSS, Javascript</li>
-                            <li>CSS Grid</li>
-                            <li>JQuery</li>
-                            <li>Bootstrap 4 (clearfix only)</li>
-                            <li>Open Weather Map API</li>
+                            <li class="list-group-item">JavaScript</li>
+                            <li class="list-group-item">Local Storage</li>
+                            <li class="list-group-item">NY Times API</li>
                         </ul>
-                    </div>
+                    </details>
+                    <details class="col-xs-12 col-lg-6 list-group list-group-flush">
+                        <summary>What I Did</summary>
+                        <ul class="project-role-list">
+                            <li class="list-group-item">
+                                Calls to NY Times API for articles following a search criteria.
+                            </li>
+                            <li class="list-group-item">
+                                Displaying NY Times in a easily readable fashion.
+                            </li>
+                            <li class="list-group-item">
+                                Local Storage setup & tracking of user-saved articles.
+                            </li>
+                        </ul>
+                    </details>
+                </div>
+                <div class="card-links">
+                    <a href="https://cjlaflamme1.github.io/MyCovidTracker/" class="card-link" target="_blank">View
+                        Site
+                    </a>
+                    <span>||</span>
+                    <a href="https://github.com/cjlaflamme1/MyCovidTracker" class="card-link" target="_blank">View
+                        Code
+                    </a>
                 </div>
             </div>
-            <p class="project-description col-12">
-                Your typical weather app but inspired by eggplants &#x1F346;&#x1F346;&#x1F346;. Upon load, you're shown
-                weather for your geolocation. Enter a zip code to see the weather in the desired area and be shown
-                current
-                weather stats as well as a five-day forecast. A list of previous searches is saved as buttons for
-                quicker
-                searches in the future.
-            </p>
-            <div class="project-links col-12">
-                <a href="https://br3ndan-l8n.github.io/Weather-Dashboard-API/" class="project-link" target="_blank">View
-                    Site</a>
-                <span>||</span>
-                <a href="https://github.com/BR3NDAN-L8N/Weather-Dashboard-API" class="project-link" target="_blank">View
-                    Code</a>
-            </div>
-        </section>
-        <!-- PROJECT 4 -->
-        <section class="row individual-project-section project-3">
-            <h3 class="col-sm-12 project-title">Work Day Scheduler</h3>
-            <div class="row">
-                <figure class="col-sm-12 col-md-5">
-                    <img class="project-image" src="assets/Images/WorkDayScheduler.png"
-                        alt="Preview of Work Day Scheduler app." />
-                </figure>
-                <div class="col-sm-12 col-md-6">
-                    <div class="project-technologies-used">
-                        <h4>Technologies Used</h4>
-                        <ul class="technologies-list">
-                            <li>Basic: HTML, CSS, Javascript</li>
-                            <li>JQuery</li>
-                            <li>Local Storage</li>
-                            <li>Bootstrap 4</li>
-                            <li>Moment.js</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <p class="project-description col-12">
-                Scheduler for the workday! Enter a start time and be presented with 9, 1-hour, blocks. Easily keep track
-                of your current, past, and future tasks with dynamic time-block-coloring. Unfortunately, you're limited
-                to
-                a 9-hour workday, but I call that a feature #WorkLifeBalance!
-            </p>
-            <div class="project-links col-12">
-                <a href="https://br3ndan-l8n.github.io/Day-Calendar/" class="project-link" target="_blank">View Site</a>
-                <span>||</span>
-                <a href="https://github.com/BR3NDAN-L8N/Day-Calendar" class="project-link" target="_blank">View Code</a>
-            </div>
-        </section>
-    </article>
+        </article>
+
+
+
+
+
 
 </main>
