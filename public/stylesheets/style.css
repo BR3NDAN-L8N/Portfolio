@@ -148,6 +148,9 @@ p.hero-sub-title {
     border-radius: 5px;
     
 }
+article.project-card img {
+    max-height: 300px;
+}
 div.card-details {
     margin: 40px;
 }
@@ -332,10 +335,10 @@ input[type=submit]:hover {
 */
 
 /* DESKTOP */
-@media (min-width: 992px) {
+@media (min-width: 1025px) {
     main {
-        padding-right: 20vw;
-        padding-left: 20vw;
+        padding-right: 10vw;
+        padding-left: 10vw;
     }
     img {
         height: auto;
@@ -350,5 +353,19 @@ input[type=submit]:hover {
     }
     article.email-sent-success-modal {
         width: 50vw;
+    }
+}
+
+@media (min-width: 1040px) {
+    main {
+        padding-right: 15vw;
+        padding-left: 15vw;
+    }
+}
+
+@media (min-width: 1340px) {
+    main {
+        padding-right: 20vw;
+        padding-left: 20vw;
     }
 }
