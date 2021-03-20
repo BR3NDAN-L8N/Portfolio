@@ -1,14 +1,22 @@
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+main.App {
+  background-color: #282c34;
+    padding: 5vw;
+}
+
+h1 {
+    font-size: calc(10px + 5vw);
+}
+h2 {
+    font-size: calc(10px + 5vw);
 }
 
 header.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  min-height: 5vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: center;
+}
+header span.hero-name {
+    color: rgb(167, 86, 243);
 }
