@@ -1,6 +1,18 @@
 main.App {
-  background-color: #282c34;
+    background-color: #282c34;
     padding: 5vw;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
 }
 
 h1 {
@@ -11,12 +23,13 @@ h2 {
 }
 
 header.App-header {
-  min-height: 5vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+    min-height: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 header span.hero-name {
     color: rgb(167, 86, 243);
+    font-size: calc(10px + 7vw);
 }
