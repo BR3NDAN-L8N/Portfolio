@@ -1,6 +1,7 @@
 main.App {
-    background-color: #282c34;
-    padding: 5vw;
+    color: white;
+    background-color: var(--primary-background);
+    padding: 0 5vw;
 }
 
 .container {
@@ -9,10 +10,12 @@ main.App {
     align-items: center;
     justify-content: center;
 }
-
 .row {
     display: flex;
     flex-direction: row;
+}
+.float-right {
+    float: right;
 }
 
 h1 {
@@ -23,7 +26,7 @@ h2 {
 }
 
 header.App-header {
-    min-height: 5vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;

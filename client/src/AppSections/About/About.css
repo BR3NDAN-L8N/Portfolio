@@ -1,4 +1,4 @@
 img.about-image {
-    height: 50vw;
-    width: auto;
+    height: calc(50vw + 20px);
+    width: 50vw;
 }
