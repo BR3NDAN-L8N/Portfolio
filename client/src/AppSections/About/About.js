@@ -11,10 +11,6 @@ export default function About() {
     return (
         <article className="container">
             <SectionHeader title="About" />
-
-            <header>
-                <h2>Intro</h2>
-            </header>
             <figure>
                 <img className="about-image" src={imageOfMe}
                     alt="shows someone looking away from the camera with the text, Me focusing on Zoom meeting. Then shows the same person with their head turned towards the camera with the text, Me checking my angles to make sure I'm still hot." />
