@@ -9,11 +9,11 @@ export default function Navbar() {
     return (
         <nav id="navbar">
             <NavbarLink
-                name="Brendan Leighton"
+                name="Top"
                 id="scroll-top"
             />
 
-            <span className="float-right nav-links">
+            <span className="nav-links">
                 <NavbarLink
                     name="About"
                     id="about-section"
@@ -26,7 +26,6 @@ export default function Navbar() {
                     name="Contact"
                     id="contact-section"
                 />
-
             </span>
         </nav>
     )

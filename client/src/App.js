@@ -7,20 +7,21 @@ import Contact from "./AppSections/Contact/Contact";
 import './App.css';
 
 function App() {
-  return (
-    <main className="App" id="scroll-top">
-          <Navbar />
-          <header className="App-header">
-              <h1 className="container">
-                  Hey, I'm <span className="hero-name">Brendan Leighton!</span> Web Developer
+    return (
+        <div className="App" id="scroll-top">
+            <Navbar />
+            <header className="App-header">
+                <h1 className="container">
+                    Hey, I'm <span className="hero-name">Brendan Leighton!</span> Web Developer
               </h1>
-          </header>
-          
-          <About />
-          <Projects />
-          <Contact />
-    </main>
-  );
+            </header>
+            <main>
+                <About />
+                <Projects />
+                <Contact />
+            </main>
+        </div>
+    );
 }
 
 export default App;

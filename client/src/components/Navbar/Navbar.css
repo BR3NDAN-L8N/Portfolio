@@ -1,11 +1,18 @@
 nav {
+    display: flex;
+    justify-content: space-between;
     position: fixed;
-    height: 10vh;
-    width: 90%;
-    margin: 0 -5vw;
-    padding: 0 5vw;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 10vw 0 9vw;
     background-color: var(--primary-background);
-    line-height: 10vh;
+    line-height: 15vh;
     font-size: large;
     z-index: 1000;    
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
 }

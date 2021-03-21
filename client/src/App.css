@@ -1,7 +1,5 @@
-main.App {
-    color: white;
-    background-color: var(--primary-background);
-    padding: 0 5vw;
+div.App {
+    margin: 0 10vw;
 }
 
 .container {
@@ -9,6 +7,7 @@ main.App {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    /* padding-top: 5vh; */
 }
 .row {
     display: flex;
@@ -39,4 +38,5 @@ header.App-header {
 header span.hero-name {
     color: rgb(167, 86, 243);
     font-size: calc(10px + 7vw);
+    text-align: center;
 }
