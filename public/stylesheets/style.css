@@ -1,0 +1,372 @@
+:root {
+    --my-blue: #000000;
+    --my-orange: #fccf68;
+    --my-pink: #e23ced;
+}
+
+
+/* 
+    STYLE ALL ELEMENTS
+*/
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-size: medium;
+    color: var(--my-orange);
+    background-color: var(--my-blue);
+}
+main {
+    padding: 0vh 5vw;
+    margin-top: 55px;
+    width: 100%;
+}
+header.page-header {
+    padding: 15vh 0px 15vh;
+}
+header.page-header hr{  /* Horizontal Rule for each section under header, About, Portfolio, Contact */
+    width: 100%;
+    margin: 20px 10vw 0px;
+    border-color: var(--my-orange);
+    border-width: 1px;
+}
+article.row, article.home-call-to-action {
+    margin-bottom: 15vh;
+}
+article header {
+    margin-bottom: 7vh;
+}
+a {
+    cursor: pointer;
+}
+img {
+    border-radius: 5px;
+}
+.row, .container{
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+h1, h2, h3, h4, h5, h6 {
+        text-align: center;
+        color: #ffffff;
+}
+p {
+    letter-spacing: auto;
+    text-align: justify;
+    text-justify: auto;
+    text-indent: 24px;   
+    font-size: 110%;
+}
+p.intro {
+    font-size: 120%;
+}
+li {
+    list-style: none;
+}
+.hide {
+    display: none;
+}
+
+/* 
+    NAV-BAR - can't find something? check @Media at bottom
+*/
+header nav {
+    margin: 0px;
+    background-color: var(--my-blue);
+    border-bottom: 1px solid var(--my-orange);
+    font-size: 18px;
+}
+.img-logo {
+    width: auto;
+    height: 45px;
+}
+#collapsibleNavbar {
+    color: var(--my-orange);
+}
+.nav-bar-link{
+    color: var(--my-pink);
+}
+.nav-bar-link:hover, .navbar-nav li>a:focus, .navbar-nav li.nav-item.active {
+    color: white;
+}
+
+/* 
+    HOME/LANDING PAGE - can't find something? check @Media at bottom
+*/
+article.home-call-to-action {
+    padding-top: 0px;
+}
+div.cta-or {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+a.cta-links {
+    color: var(--my-pink);
+    border: 2px solid var(--my-pink);
+    border-radius: 15px;
+}
+a.cta-links:hover {
+    text-decoration: none;
+    color: white;
+    border-color: white;
+}
+.cta-links, .cta-or {
+    padding: 5px;
+}
+article.hero {
+    height: 100vh;
+}
+article.hero svg.logo {
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50vh;
+    width: 100%;
+}
+h1.hero-title {
+    font-size: 350%;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+p.hero-sub-title {
+    font-size: 150%;
+    margin: 0vh 10vw 20vh;
+}
+
+/* 
+    PROJECT ARTICLE - can't find something? check @Media at bottom
+*/
+.project-card {
+    margin: 0px;
+    padding: 3vh 0px;
+    border: 2px solid white;
+    border-radius: 5px;
+    
+}
+article.project-card img {
+    max-height: 300px;
+}
+div.card-details {
+    margin: 40px;
+}
+details[open] {
+    overflow: none;
+}
+.list-group-item {
+    background-color: #1a1a1a;
+    border-color: white;
+    overflow: hidden;
+}
+div.card-links {
+    text-align: center;
+    margin-top: 40px;
+}
+a.card-link {
+    cursor: pointer;
+    color: var(--my-pink);
+    text-decoration-line: none;
+}
+a.card-link:hover {
+    color: white;
+}
+
+
+/* 
+    ABOUT ARTICLE - can't find something? check @Media at bottom
+*/
+/* header.page-header {
+    margin-top: 55px;
+} */
+ul.skill-list, ul.interest-list {
+    margin-bottom: 7vh;
+}
+img.about-image {
+    width: 100%;
+    height: auto;
+}
+section#about section.personal-interests div h3 {
+    text-align: center;
+}
+div.skill-lists {
+    margin-top: 7vh;
+}
+div.tech-skill-list {
+    text-align: center;
+}
+ul.skill-list li{
+    list-style: none;
+}
+ul.interest-list {
+    text-align: center;
+    margin-bottom: 7vh;
+}
+img.bootcamp-certificate {
+    width: 100%;
+    height: auto;
+}
+a.about-link {
+    color: var(--my-pink);
+    text-decoration: none;
+}
+a.about-link:hover {
+    color: white;
+}
+/* 
+    FOOTER
+*/
+article.social-media a {
+    padding: 5vw;
+    color: var(--my-pink);
+}
+article.social-media a:hover {
+    color: white;
+}
+div.copyright {
+    text-align: center;
+    color: var(--my-orange);
+}
+button.email-button {
+    position: fixed;
+    bottom: 2vh;
+    right: 2vw;
+    color: var(--my-blue);
+    border: 0px solid white;
+    border-radius: 50% 50% 15% 50%;
+    background-color: var(--my-pink);
+}
+button.email-button:hover {
+    background-color: white;
+}
+
+/* 
+    CONTACT FORM - can't find something? check @Media at bottom
+*/
+form.email-form, .email-sent-success-modal {
+    z-index: 2;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 0px;
+    padding: 2vh 0vw;;
+    background-color: var(--my-blue);
+    color: white;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+form.email-form {
+    height: 80vh;
+    width: 100vw;
+}
+.email-sent-success-modal {
+    padding: 5px 3px;
+}
+h3.email-modal-header {
+    text-align: center;
+    /* margin-top: 3vh; */
+}
+p.email-modal-text {
+    display: block;
+    text-align: center;
+}
+button.exit-button, button.exit-button-modal {
+    display: block;
+    z-index: 3;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: 1px 1px;
+    width: 3vh;
+    height: 3vh;
+    border-radius: 50%;
+    background-color: var(--my-pink);
+    border: black 0px;
+    color: var(--my-blue);
+    text-align: center;
+}
+.exit-button-x{
+    position: relative;
+    top: -5px;
+  /* transform: translateY(-100%); */
+}
+button.exit-button:hover, button.exit-button-modal:hover {
+    background-color: var(--my-blue);
+    color: var(--my-pink);
+    border: 1px solid var(--my-pink);
+}
+input[type=text], textarea[type=text] {
+    margin: 0px auto 25px;
+    color: var(--my-blue)!important;
+    background-color: #fccf68!important;
+}
+input::placeholder, textarea::placeholder {
+    color: #120148d0!important;
+}
+input[type=submit] {
+    background-color: var(--my-pink);
+    color: var(--my-blue);
+    font-size: 24px;
+    letter-spacing: 1px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: left;
+}
+input[type=submit]:hover {
+    background-color: var(--my-blue);
+    color: var(--my-pink);
+    font-size: 24px;
+    letter-spacing: 1px;
+    padding: 12px 20px;
+    border: 1px solid var(--my-pink);
+    border-radius: 4px;
+    cursor: pointer;
+    float: left;
+}
+
+
+/* 
+    MEDIA QUERIES
+*/
+
+/* DESKTOP */
+@media (min-width: 1025px) {
+    main {
+        padding-right: 10vw;
+        padding-left: 10vw;
+    }
+    img {
+        height: auto;
+        width: 100%;
+    }
+    p.hero-sub-title {
+        font-size: 36px;
+        padding: 0px 20vw;
+    }
+    form.email-form {
+    width: 50vw;
+    }
+    article.email-sent-success-modal {
+        width: 50vw;
+    }
+}
+
+@media (min-width: 1040px) {
+    main {
+        padding-right: 15vw;
+        padding-left: 15vw;
+    }
+}
+
+@media (min-width: 1340px) {
+    main {
+        padding-right: 20vw;
+        padding-left: 20vw;
+    }
+}

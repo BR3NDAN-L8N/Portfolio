@@ -1,0 +1,11 @@
+nav {
+    position: fixed;
+    height: 10vh;
+    width: 90%;
+    margin: 0 -5vw;
+    padding: 0 5vw;
+    background-color: var(--primary-background);
+    line-height: 10vh;
+    font-size: large;
+    z-index: 1000;    
+}
