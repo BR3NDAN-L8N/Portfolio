@@ -20,7 +20,7 @@ export default function Navbar() {
                 />
                 <NavbarLink
                     name="Projects"
-                    id="project-section"
+                    id="projects-section"
                 />
 
             </span>

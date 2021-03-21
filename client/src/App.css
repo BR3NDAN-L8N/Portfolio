@@ -25,6 +25,10 @@ h2 {
     font-size: calc(10px + 5vw);
 }
 
+article {
+    min-height: 100vh;
+}
+
 header.App-header {
     height: 100vh;
     display: flex;

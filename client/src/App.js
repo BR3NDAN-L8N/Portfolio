@@ -1,6 +1,7 @@
 //  COMPONENT imports
-import About from "./AppSections/About/About";
 import Navbar from "./components/Navbar/Navbar";
+import About from "./AppSections/About/About";
+import Projects from "./AppSections/Projects/Projects";
 
 import './App.css';
 
@@ -15,6 +16,7 @@ function App() {
           </header>
           
           <About />
+          <Projects />
     </main>
   );
 }
