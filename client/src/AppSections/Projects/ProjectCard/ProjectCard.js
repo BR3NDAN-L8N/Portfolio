@@ -27,8 +27,8 @@ export default function ProjectCard(props) {
                 <p>{props.text}</p>
                 <p>Team Project</p>
                 <p>Technologies I Used: {displayTechUsed(props.techUsed)}</p>
-                <a href={props.urlCode} className="btn">View Code</a>
-                <a href={props.urlSite} className="btn float-right">View Site</a>
+                <a href={props.urlCode} className="btn" target="_blank" rel="noreferrer">View Code</a>
+                <a href={props.urlSite} className="btn float-right" target="_blank" rel="noreferrer">View Site</a>
             </div>
         </div>
     )
