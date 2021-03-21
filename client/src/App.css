@@ -40,3 +40,8 @@ header span.hero-name {
     font-size: calc(10px + 7vw);
     text-align: center;
 }
+
+
+img {
+    border-radius: 5px;
+}
