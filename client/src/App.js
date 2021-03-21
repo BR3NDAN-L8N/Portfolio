@@ -2,6 +2,7 @@
 import Navbar from "./components/Navbar/Navbar";
 import About from "./AppSections/About/About";
 import Projects from "./AppSections/Projects/Projects";
+import Contact from "./AppSections/Contact/Contact";
 
 import './App.css';
 
@@ -17,6 +18,7 @@ function App() {
           
           <About />
           <Projects />
+          <Contact />
     </main>
   );
 }

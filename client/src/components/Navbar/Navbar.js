@@ -22,6 +22,10 @@ export default function Navbar() {
                     name="Projects"
                     id="projects-section"
                 />
+                <NavbarLink
+                    name="Contact"
+                    id="contact-section"
+                />
 
             </span>
         </nav>
