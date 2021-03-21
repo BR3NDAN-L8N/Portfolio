@@ -26,6 +26,7 @@ h2 {
 
 article {
     min-height: 100vh;
+    padding-top: 5vh;
 }
 
 header.App-header {

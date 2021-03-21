@@ -1,3 +1,10 @@
+
+/* @media screen and (max-width: 687px) {
+    #projects-section {
+        padding-top: calc(25px - 1vw);
+    }
+} */
+
 .card-wrapper {
     display: flex;
     flex-wrap: wrap;
