@@ -17,7 +17,7 @@ export default function Contact() {
     }
 
     return (
-        <article className="contact container" id="contact-section">
+        <article className="contact container">
 
             <SectionHeader
                 title="Get In Touch!"

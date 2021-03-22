@@ -12,6 +12,7 @@ export default function NavbarLink(props) {
             to={props.id}
             smooth="true"
             duration={500}
+            offset={-45}
         >{props.name}
         </Link>
     )

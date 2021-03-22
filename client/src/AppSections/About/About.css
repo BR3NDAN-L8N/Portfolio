@@ -1,7 +1,24 @@
+div.about-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.about-figure {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+.about-text {
+    flex: 1 0 300px;
+    max-width: 450px;
+}
+
 img.about-image {
-    height: 50vw;
-    width: 50vw;
+    height: 70vw;
+    width: 65vw;
     max-width: 250px;
     max-height: 350px;
+    margin: auto;
     box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
 }

@@ -11,7 +11,7 @@ import safeSpaceImg from './assets/safe-space-tiny.png';
 
 export default function Projects() {
     return (
-        <article className="container" id="projects-section">
+        <article className="container">
             <SectionHeader title="Projects" />
 
             <section className="card-wrapper">

@@ -7,7 +7,6 @@ div.App {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* padding-top: 5vh; */
 }
 .row {
     display: flex;
@@ -26,8 +25,9 @@ h2 {
 
 article {
     min-height: 100vh;
-    padding-top: 5vh;
+    padding-top: 5vw;
 }
+/* @media screen and (max-height: ) */
 
 header.App-header {
     height: 100vh;
