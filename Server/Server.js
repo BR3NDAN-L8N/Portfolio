@@ -10,9 +10,8 @@ App.get('/', function (req, res) {
     res.sendFile(Path.join(__dirname, '../client/build/index.html'));
 })
 
-
 // require routes
-// require("./routes/api.js")(app);
+require("./SendGridApi/apiRoute")(App);
 
 App.listen(PORT, () => {
     console.log(`\n***\nApp running on port ${PORT}!\n***\n`);

@@ -1,5 +1,5 @@
 // Requiring path to so we can use relative routes to our HTML files
-const sendEmail = require("../config/email-orm");
+const sendEmail = require("./SendGridApi");
 
 module.exports = function (app) {
     app.post("/email/send-email", (req, res) => {
