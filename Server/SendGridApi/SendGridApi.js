@@ -1,12 +1,12 @@
+require('dotenv').config();
 const sgMail = require('@sendgrid/mail'),
     fs = require("fs"),
     Handlebars = require("handlebars"),
     path = require("path");
-require('dotenv').config();
 
-sgMail.setApiKey(process.env.SendGridAPI);
+sgMail.setApiKey(process.env.SendGridApiKey);
 
-sendEmail = (msg) => {
+const sendEmail = (msg) => {
     (async () => {
         try {
             await sgMail.send(msg);
@@ -20,47 +20,47 @@ sendEmail = (msg) => {
     })();
 }
 
-getTemplate = (emailTemplate) => {
+const getTemplate = (emailTemplate) => {
     // Open template file
-    const chosenTemplate = fs.readFileSync(path.join(__dirname, `../views/email/email-to-${emailTemplate}.handlebars`), 'utf8');
+    const chosenTemplate = fs.readFileSync(path.join(__dirname, `./email-templates/to-${emailTemplate}.handlebars`), 'utf8');
     // Create email generator
     return template = Handlebars.compile(chosenTemplate);
 }
 
-toAdmin = ({ email, name, message } = emailData) => {
+const toAdmin = (emailData) => {
 
     const data = {
-        email,
-        name,
-        message
+        email: emailData.email,
+        name: emailData.name,
+        message: emailData.message
     }
 
     const template = getTemplate("admin");
-    emailHTML = template(data);
+    const emailHTML = template(data);
 
     const msg = {
         to: process.env.SendGridAdminEmail,
         from: process.env.SendGridAdminEmail,
-        subject: `${name} Might Have A Job For You!`,
+        subject: `*** JOB JOB JOB ***`,
         html: emailHTML
     };
 
     sendEmail(msg);
 }
 
-toUser = ({ email, name, message } = emailData) => {
+const toUser = (emailData) => {
 
     const data = {
-        email,
-        name,
-        message
+        email: emailData.email,
+        name: emailData.name,
+        message: emailData.message
     }
 
     const template = getTemplate("user");
-    emailHTML = template(data);
+    const emailHTML = template(data);
 
     const msg = {
-        to: email,
+        to: data.email,
         from: process.env.SendGridAdminEmail,
         subject: "Your Hiring Journey Is Almost Over!",
         html: emailHTML

@@ -5,6 +5,8 @@ const PORT = process.env.PORT || 8080;
 
 //  react's client-side build folder
 App.use(express.static(Path.join(__dirname, '../client/build')));
+// 
+App.use(express.json());
 //  index.html in the above folder
 App.get('/', function (req, res) {
     res.sendFile(Path.join(__dirname, '../client/build/index.html'));
