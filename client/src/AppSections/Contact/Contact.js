@@ -55,11 +55,11 @@ export default function Contact() {
 
                         <a href="https://github.com/BR3NDAN-L8N" className="tooltip" target="_blank" rel="noreferrer">
                             <span className="tooltip-text">Github Profile</span>
-                            <img src={githubLogo} className="social-profile-logo" alt="github logo" />
+                            <img src={githubLogo} className="social-profile-logo logo-github" alt="github logo" />
                         </a>
                         <a href="https://www.linkedin.com/in/brendan-leighton/" className="tooltip" target="_blank" rel="noreferrer">
                             <span className="tooltip-text">LinkedIn Profile</span>
-                            <img src={linkedInLogo} className="social-profile-logo" alt="linkedIn logo" />
+                            <img src={linkedInLogo} className="social-profile-logo logo-linkedin" alt="linkedIn logo" />
                         </a>
                     </div>
                     {/* FORM RIGHT */}
