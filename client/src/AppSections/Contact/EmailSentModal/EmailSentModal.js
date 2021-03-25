@@ -1,7 +1,7 @@
 import React from 'react'
 
 import './EmailSentModal.css';
-import closeImg from './assets/close7.png';
+import closeImg from './assets/close9.png';
 
 export default function EmailSentModal(props) {
 
@@ -13,9 +13,9 @@ export default function EmailSentModal(props) {
 
     return (
         <div className={addToStyleClasses(props.display)}>
-            <p>Email Sent!</p>
-            <button>
-                <img src={closeImg} className="" alt="" />
+            <p className="modal-text">Email Sent! Check SPAM if you don't see a confirmation email in your mailbox.</p>
+            <button className="close-modal">
+                <img src={closeImg} className="close-image" alt="" />
             </button>
         </div>
     )
