@@ -6,13 +6,26 @@ import SectionHeader from '../../components/SectionHeader/SectionHeader';
 import './Contact.css';
 import githubLogo from './assets/github.png';
 import linkedInLogo from './assets/linkedin.png';
+//  COMPONENT imports
+import EmailSentModal from './EmailSentModal/EmailSentModal';
 
 export default function Contact() {
+
+    const [modalDisplay, setModalDisplay] = React.useState(false);
 
     //  FORM
     const { register, handleSubmit, errors } = useForm();
 
-    const postToBackendApi = (data) => {
+    const onSubmit = async (data) => {
+        // const response = await postToBackendApi(data);
+        const response = true;
+        console.log(`response from onSubmit: ${response}`);
+        console.log('current modalDisplay value', modalDisplay);
+        setModalDisplay(response);
+        console.log('response.sent is ', response);
+    }
+
+    const postToBackendApi = async (data) => {
         console.log(data);
         console.log(`\nstingified data: ${JSON.stringify(data)}\n`);
         const url = '/email/send-email';
@@ -24,8 +37,11 @@ export default function Contact() {
             },
             body: JSON.stringify(data) // body data type must match "Content-Type" header
         };
-        fetch(url, initObject);
-        // return response.json;
+        const response = await fetch(url, initObject);
+        const jsonRes = await response.json();
+        console.log(`postToBackendApi response: ${JSON.stringify(jsonRes)}`);
+        const resString = await JSON.stringify(jsonRes);
+        return resString;
     }
 
     return (
@@ -35,7 +51,11 @@ export default function Contact() {
                 title="Get In Touch!"
             />
 
-            <form className="form" onSubmit={handleSubmit(postToBackendApi)}>
+            <EmailSentModal
+                display={modalDisplay}
+            />
+
+            <form className="form" onSubmit={handleSubmit(onSubmit)}>
                 <div className="form-wrapper">
                     {/* FORM LEFT */}
                     <div className="form-left">
