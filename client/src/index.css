@@ -40,7 +40,11 @@ body {
 
 .tooltip:hover .tooltip-text {
     visibility: visible;
-    transform: translate(-25%, -100%);
     font-size: 0.5rem;
+}
+.tooltip-text {
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -100%);
 }
 /* END OF TOOLTIP */

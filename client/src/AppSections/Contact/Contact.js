@@ -10,7 +10,7 @@ import linkedInLogo from './assets/linkedin.png';
 export default function Contact() {
 
     //  FORM
-    const { register, handleSubmit, error } = useForm();
+    const { register, handleSubmit, errors } = useForm();
 
     const postToBackendApi = (data) => {
         console.log(data);
@@ -41,13 +41,13 @@ export default function Contact() {
                     <div className="form-left">
                         <div className="name">
                             {/* FIRST NAME */}
-                            <label htmlFor="name">Your Name</label>
-                            <input type="text" id="name" placeholder="John Smith" name="name" size="auto" ref={register} />
+                            <label htmlFor="name">* Name</label>
+                            <input className={errors.name && "contact-form-required"} type="text" id="name" placeholder="John Smith" name="name" size="auto" ref={register({ required: true, minLength: 3  })} />
                         </div>
                         <div className="email">
                             {/* EMAIL */}
-                            <label htmlFor="email">Your Email</label>
-                            <input type="text" id="email" placeholder="Example@email.com" name="email" ref={register} />
+                            <label htmlFor="email">* Email</label>
+                            <input className={errors.email && "contact-form-required"} type="text" id="email" placeholder="Example@email.com" name="email" ref={register({ required: true, minLength: 10 })} />
                         </div>
                     </div>
                     {/* LOGOS */}
@@ -66,9 +66,9 @@ export default function Contact() {
                     <div className="form-right">
                         <div className="message">
                             {/* MESSAGE  */}
-                            <label htmlFor="message">Message</label>
-                            <textarea type="text" rows="12" id="form-message"
-                                placeholder="Tell me something about my eyes..." name="message" ref={register}></textarea>
+                            <label htmlFor="message">* Message</label>
+                            <textarea className={errors.message && "contact-form-required"} type="text" rows="12" id="form-message"
+                                placeholder="Tell me something about my eyes..." name="message" ref={register({ required: true, minLength: 20 })}></textarea>
                         </div>
                         {/* SUBMIT EMAIL */}
                         <input type="submit" value="Send Email" />
