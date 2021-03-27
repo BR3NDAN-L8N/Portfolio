@@ -53,6 +53,7 @@ export default function Contact() {
 
             <EmailSentModal
                 display={modalDisplay}
+                onClose={() => setModalDisplay(false)}
             />
 
             <form className="form" onSubmit={handleSubmit(onSubmit)}>

@@ -25,7 +25,7 @@ export default function Projects() {
                     urlSite="https://safe-space-ne.herokuapp.com/home"
                 />
                 <ProjectCard
-                    header="Outdoor Adventure Buddies"
+                    header="Adventure Buddies"
                     text="Outdoor Adventure Meet-up Network"
                     techUsed={["Node.js", "Express", "Handlebars", "SendGrid Api"]}
                     image={adventureBuddiesImg}

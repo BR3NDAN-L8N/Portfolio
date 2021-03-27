@@ -1,0 +1,20 @@
+{
+  "name": "portfolio",
+  "version": "4.0.0",
+  "description": "Personal developer portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-dev": "cd Server && npm run start-dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BR3NDAN-L8N/Portfolio.git"
+  },
+  "author": "Brendan Leighton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BR3NDAN-L8N/Portfolio/issues"
+  },
+  "homepage": "https://github.com/BR3NDAN-L8N/Portfolio#readme"
+}
