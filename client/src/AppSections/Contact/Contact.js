@@ -17,8 +17,7 @@ export default function Contact() {
     const { register, handleSubmit, errors } = useForm();
 
     const onSubmit = async (data) => {
-        // const response = await postToBackendApi(data);
-        const response = true;
+        const response = await postToBackendApi(data);
         console.log(`response from onSubmit: ${response}`);
         console.log('current modalDisplay value', modalDisplay);
         setModalDisplay(response);
@@ -27,13 +26,12 @@ export default function Contact() {
 
     const postToBackendApi = async (data) => {
         console.log(data);
-        console.log(`\nstingified data: ${JSON.stringify(data)}\n`);
+        console.log(`\n stingified data: ${JSON.stringify(data)}\n`);
         const url = '/email/send-email';
-        const initObject = {
-            method: 'POST', // *GET, POST, PUT, DELETE, etc.
+        const initObject = await {
+            method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
-                // 'Content-Type': 'application/x-www-form-urlencoded',
             },
             body: JSON.stringify(data) // body data type must match "Content-Type" header
         };
