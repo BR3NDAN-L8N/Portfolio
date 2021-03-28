@@ -1,7 +1,6 @@
 footer {
-    padding-top: 2rem;
-}
-
-footer p {
+    width: 100vw;
+    padding: 2rem 0;
+    background-color: var(--tertiary-background);
     text-align: center;
 }
