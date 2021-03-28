@@ -1,3 +1,4 @@
+import React from 'react';
 //  COMPONENT imports
 import Navbar from "./components/Navbar/Navbar";
 import About from "./AppSections/About/About";
