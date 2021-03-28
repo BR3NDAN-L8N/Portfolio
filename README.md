@@ -51,4 +51,3 @@ Responsive design ensures that web applications render well on a variety of devi
 * [GitHub Pages](https://pages.github.com)
 * [w3schools.com](https://www.w3schools.com/)
 * [Google](https://www.google.com/)
-

@@ -1,0 +1,6 @@
+footer {
+    width: 100vw;
+    padding: 2rem 0;
+    background-color: var(--tertiary-background);
+    text-align: center;
+}

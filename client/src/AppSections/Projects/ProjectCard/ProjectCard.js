@@ -23,12 +23,13 @@ export default function ProjectCard(props) {
         <div className="card">
             <img src={props.image} alt={props.imageAlt} />
             <div className="info">
-                <h1 className="header">{props.header}</h1>
-                <p>{props.text}</p>
-                <p>Team Project</p>
+                <h3 className="header">{props.header}</h3>
+                <p>{props.text}, Team Project</p>
                 <p>Technologies I Used: {displayTechUsed(props.techUsed)}</p>
-                <a href={props.urlCode} className="btn" target="_blank" rel="noreferrer">View Code</a>
-                <a href={props.urlSite} className="btn float-right" target="_blank" rel="noreferrer">View Site</a>
+                <div className="buttons">
+                    <a href={props.urlCode} className="btn" target="_blank" rel="noreferrer">View Code</a>
+                    <a href={props.urlSite} className="btn" target="_blank" rel="noreferrer">View Site</a>
+                </div>
             </div>
         </div>
     )

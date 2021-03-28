@@ -11,7 +11,7 @@ import safeSpaceImg from './assets/safe-space-tiny.png';
 
 export default function Projects() {
     return (
-        <article className="container" id="projects-section">
+        <article className="container">
             <SectionHeader title="Projects" />
 
             <section className="card-wrapper">
@@ -25,7 +25,7 @@ export default function Projects() {
                     urlSite="https://safe-space-ne.herokuapp.com/home"
                 />
                 <ProjectCard
-                    header="Outdoor Adventure Buddies"
+                    header="Adventure Buddies"
                     text="Outdoor Adventure Meet-up Network"
                     techUsed={["Node.js", "Express", "Handlebars", "SendGrid Api"]}
                     image={adventureBuddiesImg}

@@ -3,9 +3,17 @@ import React from 'react'
 import './sectionHeader.css';
 
 export default function SectionHeader(props) {
+
+    const createId = (title) => {
+        if (title === "Get In Touch!") {
+            title = 'contact';
+        }
+        return `${title.toLowerCase()}-section`;
+    }
     return (
-        <header>
-            <h2 className="section-header">{props.title}</h2>
-        </header>
+        <h2
+            className="section-header"
+            id={createId(props.title)}
+        >{props.title}</h2>
     )
 }

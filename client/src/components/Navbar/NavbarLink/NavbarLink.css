@@ -1,3 +1,10 @@
-span.nav-links .nav-link {
+.nav-link {
     padding-left: 15px;
+}
+.nav-link:hover {
+    cursor: pointer;
+    color: var(--primary-color);
+}
+.nav-link:active {
+    text-decoration: underline;
 }
