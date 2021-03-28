@@ -83,6 +83,7 @@
     font-weight: bold;
     cursor: pointer;
     transition: 0.4s ease-in-out;
+    white-space: nowrap;
 }
 
 .card .info .btn:hover {
