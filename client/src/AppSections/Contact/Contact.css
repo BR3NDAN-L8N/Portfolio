@@ -37,12 +37,12 @@ div.logos {
     align-items: center;
     gap: 2rem;
 }
-@media screen and (max-width: 806px) {
+@media screen and (max-width: 837px) {
     div.logos {
         order: 5;
     }
 }
-@media screen and (mIN-width: 1190px) {
+@media screen and (min-width: 1190px) {
     div.logos {
         min-width: 300px;
     }

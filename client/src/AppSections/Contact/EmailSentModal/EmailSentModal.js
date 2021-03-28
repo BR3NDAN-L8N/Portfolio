@@ -1,23 +1,21 @@
 import React from 'react'
 
 import './EmailSentModal.css';
-import closeImg from './assets/close9.png';
+//  FONT AWESOME ICONS
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 export default function EmailSentModal(props) {
 
     if (!props.display) return null;
 
-    // const addToStyleClasses = (display) => {
-    //     let styleClasses = 'email-modal';
-    //     if (display) return styleClasses += ' display-modal';
-    //     if (display) return styleClasses += ' hide-modal';
-    // }
+    const closeImg = <FontAwesomeIcon icon={faTimes} />
 
     return (
         <div className="email-modal">
-            <p className="modal-text">Email Sent! Check SPAM if you don't see a confirmation email in your mailbox.</p>
-            <button className="close-modal" onClick={props.onClose}>
-                <img src={closeImg} className="close-image" alt="" />
+            <p className="modal-text">Email Sent! You should receive a confirmation email shortly, it will probably be in your SPAM.</p>
+            <button className="close-modal float-right" onClick={props.onClose}>
+                {closeImg}
             </button>
         </div>
     )
