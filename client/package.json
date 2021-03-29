@@ -1,6 +1,6 @@
 {
-  "name": "zebra",
-  "version": "0.1.0",
+  "name": "portfolio-front-end",
+  "version": "1.0.0",
   "private": true,
   "proxy": "http://localhost:8080",
   "dependencies": {
