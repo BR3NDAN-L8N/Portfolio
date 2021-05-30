@@ -11,6 +11,8 @@
 }
 
 body {
+    width: 100vw;
+    overflow-x: clip;
     margin: 0;
     padding: 0;
     color: white;

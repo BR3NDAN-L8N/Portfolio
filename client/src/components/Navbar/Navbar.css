@@ -1,13 +1,13 @@
 nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    position: fixed;
+    align-items: center; 
+    align-self: flex-start;   
+    position: sticky;
     top: 0;
-    left: 0;
     width: 100%;
     height: 50px;
-    padding: 0 10vw 0 9vw;
+    padding: 0 10vw;
     background-color: var(--tertiary-background);
     font-size: large;
     z-index: 999;    
