@@ -25,7 +25,7 @@ export default function Navbar() {
     return (
         <nav id="navbar">
             <NavbarLink
-                name="Top"
+                name="Home"
                 id="scroll-top"
             />
 

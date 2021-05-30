@@ -74,18 +74,3 @@
     justify-content: flex-start;
     gap: 2rem;
 }
-.card .info .buttons .btn {
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    background: white;
-    color: black;
-    font-size: 14px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.4s ease-in-out;
-    white-space: nowrap;
-}
-
-.card .info .btn:hover {
-    box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
-}

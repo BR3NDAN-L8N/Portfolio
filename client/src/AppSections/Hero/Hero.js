@@ -1,25 +1,31 @@
 import React from 'react'
 
-
+import CTA from '../../components/CallToAction/CTA'
 import imageOfMe from './assets/me.jpeg';
 
 const styles = {
     hero: {
-        height: `calc(100vh-70px)`
+        height: `calc(100vh-70px)`,
+        textAlign: `center`
+    },
+    heroFlex: {
+        display: `flex`,
+        flexDirection: `column`,
+        justifyContent: `center`,
+        gap: `3rem`
     },
     figure: {
-        flex: `1 0 350px`,
         display: `flex`,
         justifyContent: `center`
     },
     image: {
-        height: `152`,
-        width: `152`,
+        height: `192px`,
+        width: `192px`,
         // maxHeight: `300px`,
         // maxWidth: `360px`,
         // minHeight: `200px`,
         // minWidth: `260px`,
-        margin: `auto`,
+        margin: `0, auto`,
         boxShadow: `0px 7px 10px rgba(0, 0, 0, 0.5)`,
         borderRadius: `50%`
     },
@@ -27,33 +33,36 @@ const styles = {
         display: `flex`,
         flexDirection: `column`,
         alignItems: `center`,
-        justifyContent: `center`
+        justifyContent: `center`,
+
+        fontSize: `calc(1em+3vw)`
     },
     h1Name: {
         color: `#a756f3`,
-        fontSize: `calc(1em + 3vw)`,
+        // fontSize: `calc(1em + 3vw)`,
         textAlign: `center`
     },
-    h1Title: {
-        fontSize: `calc(1em+3vw)`
-    }
+    // h1Title: {
+    //     fontSize: `calc(1em+3vw)`
+    // }
 }
 
 export default function Hero() {
     return (
         <section style={styles.hero} className="container">
-            <header>
+            <header style={styles.heroFlex}>
                 <figure style={styles.figure}>
                     <img style={styles.image} src={imageOfMe}
-                        alt="shows myself looking away from the camera with the text, 'Me focusing on Zoom meeting'. Then shows the same person with their head turned towards the camera with the text, 'Me checking my angles to make sure I'm still hot.'" />
+                        alt="Me smiling, rocking a bushy beard and a mohawk" />
                 </figure>
                 <h1 style={styles.h1}>
-                    <span style={styles.h1Name}>Brendan Leighton!</span>
-                    <span style={styles.h1Title}>Web Engineer</span>
+                    <span style={styles.h1Name}>Brendan Leighton</span>
+                <p style={styles.h1Title}>Web Engineer</p>
                 </h1>
-                <p>
-                    CALL TO ACTION
-                </p>
+                <CTA
+                    text="View My Work"
+                    sectionId="projects-section"
+                />
             </header>
         </section>
     )
