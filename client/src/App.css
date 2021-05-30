@@ -8,6 +8,7 @@ main {
     align-items: center;
     justify-content: center;
     gap: 3rem;
+    padding: 3rem, 0;
     min-height: 100vh;
 }
 .row {
@@ -19,15 +20,10 @@ main {
 }
 
 h1 {
-    font-size: calc(10px + 3vw);
+    font-size: calc(1rem + 3vw);
 }
 h2 {
-    font-size: calc(10px + 3vw);
-}
-
-article {
-    min-height: 100vh;
-    padding: 50px 0;
+    font-size: calc(1rem + 3vw);
 }
 /* @media screen and (max-height: ) */
 

@@ -2,7 +2,7 @@
     --primary-background: #282c34;
     --tertiary-background: #1f2229;
     --tertiary-background-transparent: #1f222994;
-    --primary-color: #a44df5;
+    --primary-color: #9606da;
 }
 
 * {
@@ -34,7 +34,6 @@ button {
     padding: 0.5rem 1rem;
     background: var(--primary-color);
     color: white;
-    font-size: 14px;
     font-weight: bold;
     cursor: pointer;
     transition: 0.4s ease-in-out;
@@ -44,9 +43,8 @@ button {
 }
 button a {
     text-decoration: none;
-    padding: 0.5rem 1rem;
     color: white;
-    font-size: 14px;
+    font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
     transition: 0.4s ease-in-out;

@@ -27,11 +27,10 @@ export default function ProjectCard(props) {
                 <p>{props.text}, Team Project</p>
                 <p>Technologies I Used: {displayTechUsed(props.techUsed)}</p>
                 <div className="buttons">
-
-                    <button>
+                    <button className="btn-code">
                         <a href={props.urlCode} className="btn" target="_blank" rel="noreferrer">View Code</a>
                     </button>
-                    <button>
+                    <button className="btn-site">
                         <a href={props.urlSite} className="btn" target="_blank" rel="noreferrer">View Site</a>
                     </button>
                 </div>

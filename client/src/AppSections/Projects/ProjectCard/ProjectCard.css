@@ -51,6 +51,8 @@
     opacity: 0;
     transform: translateY(30px);
     transition: 0.5s all;
+    width: 100%;
+    max-width: 450px;
 }
 
 .card:hover .info {
@@ -71,6 +73,14 @@
 
 .card .info div.buttons {
     display: flex;
-    justify-content: flex-start;
-    gap: 2rem;
+    justify-content: space-between;
+}
+.card .info div.buttons a.btn{
+    font-size: 0.8rem;
+}
+.card .info div.buttons button.btn-code{
+    float: left;
+}
+.card .info div.buttons button.btn-site{
+    float: right;
 }

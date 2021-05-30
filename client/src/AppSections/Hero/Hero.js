@@ -35,16 +35,16 @@ const styles = {
         alignItems: `center`,
         justifyContent: `center`,
 
-        fontSize: `calc(1em+3vw)`
+        fontSize: `calc(1.3em + 3vw)`
     },
     h1Name: {
-        color: `#a756f3`,
+        fontWeight: `800`,
         // fontSize: `calc(1em + 3vw)`,
         textAlign: `center`
     },
-    // h1Title: {
-    //     fontSize: `calc(1em+3vw)`
-    // }
+    h1Title: {
+        fontWeight: `400`,
+    }
 }
 
 export default function Hero() {
@@ -57,7 +57,7 @@ export default function Hero() {
                 </figure>
                 <h1 style={styles.h1}>
                     <span style={styles.h1Name}>Brendan Leighton</span>
-                <p style={styles.h1Title}>Web Engineer</p>
+                    <span style={styles.h1Title}>Web Engineer</span>
                 </h1>
                 <CTA
                     text="View My Work"
