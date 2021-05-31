@@ -74,6 +74,8 @@ export default function About() {
                         </div>
                     </IconContext.Provider>
 
+                    {/* Strength & Weakness lists? */}
+
                 </div>
             </article>
         </article>

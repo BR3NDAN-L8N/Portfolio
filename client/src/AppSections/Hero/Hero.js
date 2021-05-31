@@ -1,6 +1,7 @@
 import React from 'react'
 
 import CTA from '../../components/CallToAction/CTA'
+import ContactStrip from '../../components/Contacts/ContactStrip'
 import imageOfMe from './assets/me.jpeg';
 
 const styles = {
@@ -12,7 +13,7 @@ const styles = {
         display: `flex`,
         flexDirection: `column`,
         justifyContent: `center`,
-        gap: `3rem`
+        gap: `2rem`
     },
     figure: {
         display: `flex`,
@@ -59,6 +60,9 @@ export default function Hero() {
                     <span style={styles.h1Name}>Brendan Leighton</span>
                     <span style={styles.h1Title}>Web Engineer</span>
                 </h1>
+                <ContactStrip 
+                    size="1.3rem"
+                />
                 <CTA
                     text="View My Work"
                     sectionId="projects-section"
