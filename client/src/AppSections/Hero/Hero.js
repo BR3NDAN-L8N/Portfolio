@@ -22,10 +22,6 @@ const styles = {
     image: {
         height: `192px`,
         width: `192px`,
-        // maxHeight: `300px`,
-        // maxWidth: `360px`,
-        // minHeight: `200px`,
-        // minWidth: `260px`,
         margin: `0, auto`,
         boxShadow: `0px 7px 10px rgba(0, 0, 0, 0.5)`,
         borderRadius: `50%`
@@ -40,7 +36,6 @@ const styles = {
     },
     h1Name: {
         fontWeight: `800`,
-        // fontSize: `calc(1em + 3vw)`,
         textAlign: `center`
     },
     h1Title: {
