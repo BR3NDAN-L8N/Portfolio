@@ -1,11 +1,11 @@
 import React from 'react';
 //  COMPONENT imports
-import About from "./AppSections/About/About";
-import Projects from "./AppSections/Projects/Projects";
-import Contact from "./AppSections/Contact/Contact";
-import Footer from './AppSections/Footer/Footer';
 import Hero from './AppSections/Hero/Hero';
 import Navbar from './components/Navbar/Navbar'
+import Projects from "./AppSections/Projects/Projects";
+import About from "./AppSections/About/About";
+import Contact from "./AppSections/Contact/Contact";
+import Footer from './AppSections/Footer/Footer';
 
 
 

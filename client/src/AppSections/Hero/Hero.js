@@ -6,7 +6,7 @@ import imageOfMe from './assets/me.jpeg';
 
 const styles = {
     hero: {
-        height: `calc(100vh-70px)`,
+        height: `100vh`,
         textAlign: `center`
     },
     heroFlex: {
