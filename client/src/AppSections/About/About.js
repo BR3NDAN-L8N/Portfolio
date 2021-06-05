@@ -1,10 +1,14 @@
+import React from 'react'
 //  COMPONENT imports
 import SectionHeader from "../../components/SectionHeader/SectionHeader"
-
-import React from 'react'
+import Tooltip from '../../components/Tooltip/Tooltip'
+//  ICONS
 import { IconContext } from "react-icons"
 import { SiReact, SiJavascript, SiNodeDotJs, SiMongodb, SiHtml5, SiCss3 } from 'react-icons/si'
-import Tooltip from '../../components/Tooltip/Tooltip'
+import { IoLogoGameControllerB } from 'react-icons/io'
+import { MdComputer } from 'react-icons/md'
+import { GiTakeMyMoney } from 'react-icons/gi'
+import { RiMentalHealthFill, RiStockFill, RiEmotionLaughFill } from 'react-icons/ri'
 
 //  STYLE imports
 import './About.css';
@@ -38,7 +42,7 @@ export default function About() {
     return (
         <article className="container">
             <SectionHeader title="About" />
-            <article>
+            <section>
                 <div style={styles.iconsContainer}>
                     <IconContext.Provider value={{ size: "3rem" }}>
                         <div style={styles.row1and3}>
@@ -56,7 +60,7 @@ export default function About() {
                                 for={<SiJavascript color="#f0db4f" />}
                                 text="JavaScript"
                             />
-                            <p style={styles.centerText}>TECH</p>
+                            <p style={styles.centerText}>TECHS</p>
                             <Tooltip
                                 for={<SiReact color="#61dbfb" />}
                                 text="React"
@@ -73,11 +77,46 @@ export default function About() {
                             />
                         </div>
                     </IconContext.Provider>
-
-                    {/* Strength & Weakness lists? */}
-
                 </div>
-            </article>
+            </section>
+            <section>
+                <div style={styles.iconsContainer}>
+                    <IconContext.Provider value={{ size: "3rem" }}>
+                        <div style={styles.row1and3}>
+                            <Tooltip
+                                for={<IoLogoGameControllerB color="#349bd6" />}
+                                text="PC Gaming"
+                            />
+                            <Tooltip
+                                for={<MdComputer color="white" />}
+                                text="Computer Hardware"
+                            />
+                        </div>
+                        <div style={styles.row2}>
+                            <Tooltip
+                                for={<GiTakeMyMoney color="#21b928" />}
+                                text="Personal Finances"
+                            />
+                            <p style={styles.centerText}>HOBBY</p>
+                            <Tooltip
+                                for={<RiMentalHealthFill color="#ec2fad" />}
+                                text="Psychology"
+                            />
+                        </div>
+                        <div style={styles.row1and3}>
+                            <Tooltip
+                                for={<RiStockFill color="#b81d1d" />}
+                                text="Stock Market Investing"
+                            />
+                            <Tooltip
+                                for={<RiEmotionLaughFill color="#e7d911" />}
+                                text="Standup Comedy"
+                            />
+                        </div>
+                    </IconContext.Provider>
+                </div>
+            </section>
+                    {/* Strength & Weakness lists? */}
         </article>
     )
 }
