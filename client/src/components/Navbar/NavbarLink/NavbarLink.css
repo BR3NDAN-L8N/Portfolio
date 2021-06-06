@@ -3,7 +3,7 @@
 }
 .nav-link:hover {
     cursor: pointer;
-    color: var(--primary-color);
+    color: var(--tertiary-text-hover);
 }
 .nav-link:active {
     text-decoration: underline;

@@ -24,7 +24,7 @@ export default function ContactStrip(props) {
 
     return (
         <div style={styles.flex}>
-            <IconContext.Provider value={{ color: "white", size: props.size }}>
+            <IconContext.Provider value={{ color: "#238de4", size: props.size }}>
                 <a href={emailUrl} target="blank"><HiOutlineMailOpen /></a>
                 <a href="https://www.linkedin.com/in/brendan-leighton/" target="blank"><FaLinkedin /></a>
                 <a href='https://github.com/BR3NDAN-L8N' target="blank"><FaGithub /></a>

@@ -3,11 +3,11 @@ import {Link} from 'react-scroll'
 // import NavbarLink from '../Navbar/NavbarLink/NavbarLink'
 
 export default function CTA(props) {
-    const styles = {
-        button: {
-            backgroundColor: `var(--primary-color)`
-        }
-    }
+    // const styles = {
+    //     button: {
+    //         backgroundColor: `var(--primary-color)`
+    //     }
+    // }
     return (
         <button>
             <Link

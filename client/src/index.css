@@ -1,8 +1,12 @@
 :root {
-    --primary-background: #282c34;
-    --tertiary-background: #1f2229;
+    --primary-background: #292b2e;
+    --tertiary-background: #d3cdc7;
+    --tertiary-text: #2c2c2c;
+    /* 2c2c2c */
+    --tertiary-text-hover: #2326e4;
     --tertiary-background-transparent: #1f222994;
-    --primary-color: #9606da;
+    --primary-color: #e0b31f;
+    --test: #238de4;
 }
 
 * {
@@ -21,7 +25,7 @@ body {
     overflow-x: clip;
     margin: 0;
     padding: 0;
-    color: white;
+    color: rgb(221, 221, 221);
     background-color: var(--primary-background);
     font-family: 'Poppins', sans-serif;
 }
@@ -43,7 +47,7 @@ button {
 }
 button a {
     text-decoration: none;
-    color: white;
+    color: var(--primary-background);
     font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
@@ -51,7 +55,7 @@ button a {
     white-space: nowrap;
 }
 button:hover {
-    border: 2px solid white;
+    border: 2px solid #238de4;
 }
 /* 
     TOOLTIP
@@ -60,11 +64,24 @@ button:hover {
     position: relative;
     display: inline-block;
 }
+.tooltip-arrow {
+    visibility: hidden;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+
+    background-color: var(--tertiary-background);
+    
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
+}
 .tooltip .tooltip-text {
     visibility: hidden;
     width: 120px;
-    background-color: var(--primary-background);
-    color: #fff;
+    background-color: var(--tertiary-background);
+    color: var(--tertiary-text);
     text-align: center;
     border-radius: 5px;
     padding: 5px 0;
@@ -74,16 +91,13 @@ button:hover {
     z-index: 1;
 }
 
-.tooltip:hover .tooltip-text {
+.tooltip:hover .tooltip-text, .tooltip:hover .tooltip-arrow {
     visibility: visible;
-    font-size: 0.5rem;
+    font-size: 0.8rem;
 }
 .tooltip-text {
-    top: 0%;
+    top: -10px;
     left: 50%;
     transform: translate(-50%, -100%);
-}
-span.tooltip-text {
-    font-size: x-large;
 }
 /* END OF TOOLTIP */

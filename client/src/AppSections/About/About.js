@@ -94,7 +94,7 @@ export default function About() {
                         </div>
                         <div style={styles.row2}>
                             <Tooltip
-                                for={<GiTakeMyMoney color="#21b928" />}
+                                for={<GiTakeMyMoney color="#168b1c" />}
                                 text="Personal Finances"
                             />
                             <p style={styles.centerText}>HOBBY</p>

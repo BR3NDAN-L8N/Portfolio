@@ -17,12 +17,9 @@ main {
 .float-right {
     float: right;
 }
-
-h1 {
+h1, h2 {
     font-size: calc(1rem + 3vw);
-}
-h2 {
-    font-size: calc(1rem + 3vw);
+    color: var(--primary-color);
 }
 /* @media screen and (max-height: ) */
 

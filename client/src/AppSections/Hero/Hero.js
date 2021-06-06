@@ -32,14 +32,17 @@ const styles = {
         alignItems: `center`,
         justifyContent: `center`,
 
-        fontSize: `calc(1.3em + 3vw)`
+        // fontSize: `calc(1.3em + 3vw)`
     },
     h1Name: {
         fontWeight: `800`,
-        textAlign: `center`
+        textAlign: `center`,
+        fontSize: '1.8rem'
     },
     h1Title: {
         fontWeight: `400`,
+        padding: 'none',
+        margin: 'none'
     }
 }
 
@@ -53,8 +56,8 @@ export default function Hero() {
                 </figure>
                 <h1 style={styles.h1}>
                     <span style={styles.h1Name}>Brendan Leighton</span>
-                    <span style={styles.h1Title}>Web Engineer</span>
                 </h1>
+                    <p style={styles.h1Title}>Web Engineer</p>
                 <ContactStrip 
                     size="1.3rem"
                 />

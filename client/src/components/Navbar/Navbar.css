@@ -9,6 +9,7 @@ nav {
     height: 50px;
     padding: 0 10vw;
     background-color: var(--tertiary-background);
+    color: var(--tertiary-text);
     font-size: large;
     z-index: 999;    
 }
@@ -21,11 +22,13 @@ nav {
 .fa-bars-button {
     display: none;
     background-color: var(--tertiary-background);
-    color: white;
+    color: var(--tertiary-text);
     border: none;
 }
-.fa-bars-button:hover {
-    color: var(--primary-color);
+button.fa-bars-button:hover {
+    color: var(--tertiary-text-hover);
+    text-decoration: none;
+    border: none;
 }
 
 @media screen and (max-width: 629px) {

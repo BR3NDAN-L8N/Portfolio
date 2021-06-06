@@ -13,6 +13,7 @@
     height: 100vh;
     min-width: 75vw;
     background-color: var(--tertiary-background);
+    color: var(--tertiary-text);
 }
 .side-drawer-links:active {
     text-decoration: underline;
@@ -31,6 +32,10 @@
 }
 .close-drawer {
     background-color: var(--tertiary-background);
-    color: white;
+    color: var(--tertiary-text);
     border: none;
+}
+.close-drawer:hover {
+    border: none;
+    color: var(--tertiary-text-hover);
 }
