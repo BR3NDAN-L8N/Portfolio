@@ -5,7 +5,7 @@ import './Footer.css';
 export default function Footer() {
     return (
         <footer>
-            Brendan Leighton &copy; 2021
+            BrendanLeighton.com &copy; 2020-2021
         </footer>
     )
 }

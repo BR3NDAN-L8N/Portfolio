@@ -1,9 +1,10 @@
 :root {
-    --primary-background: #292b2e;
-    --tertiary-background: #d3cdc7;
-    --tertiary-text: #2c2c2c;
+    --primary-background: #340d53;
+    --secondary-background: #00e1ff;
+    --tertiary-background: #e0b31f;
+    --tertiary-text: #292b2e;
     /* 2c2c2c */
-    --tertiary-text-hover: #2326e4;
+    --tertiary-text-hover: #292b2e;
     --tertiary-background-transparent: #1f222994;
     --primary-color: #e0b31f;
     --test: #238de4;
