@@ -8,6 +8,8 @@
     --tertiary-background-transparent: #1f222994;
     --primary-color: #e0b31f;
     --test: #238de4;
+
+    --desktop-view: 800px;
 }
 
 * {
@@ -27,9 +29,14 @@ body {
     background-color: var(--primary-background);
     font-family: 'Poppins', sans-serif;
 }
+main {
+    padding: 0 10vw;
+}
 div.App {
-    padding: 0;
     margin: -4rem 0 0;
+}
+h1, h2 {
+    font-size: calc(1rem + 5vw);
 }
 button {
     text-decoration: none;
@@ -55,48 +62,8 @@ button a {
 button:hover {
     border: 2px solid #238de4;
 }
-/* 
-    TOOLTIP
-*/
-.tooltip {
-    position: relative;
-    display: inline-block;
-}
-.tooltip-arrow {
-    visibility: hidden;
-    position: absolute;
-    top: -20px;
-    left: 50%;
-    transform: translateX(-50%) rotate(45deg);
 
-    background-color: var(--tertiary-background);
-    
-    width: 15px;
-    height: 15px;
-    border-radius: 2px;
+@media screen and (min-width: 800px) {
+    h1 {font-size: 1rem;}
 }
-.tooltip .tooltip-text {
-    visibility: hidden;
-    width: 120px;
-    background-color: var(--tertiary-background);
-    color: var(--tertiary-text);
-    text-align: center;
-    border-radius: 5px;
-    padding: 5px 0;
-
-    /* Position the tooltip */
-    position: absolute;
-    z-index: 1;
-}
-
-.tooltip:hover .tooltip-text, .tooltip:hover .tooltip-arrow {
-    visibility: visible;
-    font-size: 0.8rem;
-}
-.tooltip-text {
-    top: -10px;
-    left: 50%;
-    transform: translate(-50%, -100%);
-}
-/* END OF TOOLTIP */
 

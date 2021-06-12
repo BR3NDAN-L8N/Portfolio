@@ -1,6 +1,8 @@
 footer {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    align-content: center;
     background-color: var(--tertiary-background);
     color: var(--tertiary-text);
 }

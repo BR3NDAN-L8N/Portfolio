@@ -1,7 +1,3 @@
-main {
-    margin: 0 10vw;
-}
-
 .container {
     display: flex;
     flex-direction: column;
@@ -17,10 +13,6 @@ main {
 .float-right {
     float: right;
 }
-h1, h2 {
-    font-size: calc(1rem + 5vw);
-}
-
 header.App-header {
     height: 100vh;
     display: flex;
@@ -28,10 +20,54 @@ header.App-header {
     align-items: center;
     justify-content: center;
 }
-
 img, .btn {
     border-radius: 5px;
 }
+
+/* 
+    TOOLTIP
+*/
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+.tooltip-arrow {
+    visibility: hidden;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+
+    background-color: var(--tertiary-background);
+    
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
+}
+.tooltip .tooltip-text {
+    visibility: hidden;
+    width: 120px;
+    background-color: var(--tertiary-background);
+    color: var(--tertiary-text);
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltip-text, .tooltip:hover .tooltip-arrow {
+    visibility: visible;
+    font-size: 0.8rem;
+}
+.tooltip-text {
+    top: -10px;
+    left: 50%;
+    transform: translate(-50%, -100%);
+}
+/* END OF TOOLTIP */
 
 @media screen and (min-width: 800px) {
     div.App {
@@ -41,6 +77,8 @@ img, .btn {
         grid-template-areas: 
             "hero main"
             "footer footer";
+        column-gap: 2rem;
+        padding: 0 5vw;
     }
     .container {
         display: flex;
@@ -51,11 +89,16 @@ img, .btn {
         margin: 4rem 0;
 }
     section.container.grid-hero {
+        position: sticky;
+        top: 0;
+        margin-top: 0;
         grid-area: hero;
         width: 100%;
     }
     main {
         grid-area: main;
+        margin: -4rem 0 0;
+        padding: 0;
     }
     .App footer {
         grid-area: footer;
