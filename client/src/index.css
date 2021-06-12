@@ -15,6 +15,7 @@
     font-size: 1.2rem;
     margin: 0;
     padding: 0;
+    outline: 2px solid white;
 }
 html {
     scroll-behavior: smooth;
@@ -22,15 +23,11 @@ html {
 }
 
 body {
-    width: 100vw;
-    overflow-x: clip;
-    margin: 0;
-    padding: 0;
     color: rgb(221, 221, 221);
     background-color: var(--primary-background);
     font-family: 'Poppins', sans-serif;
 }
-.App {
+div.App {
     padding: 0;
     margin: -4rem 0 0;
 }
@@ -102,3 +99,4 @@ button:hover {
     transform: translate(-50%, -100%);
 }
 /* END OF TOOLTIP */
+

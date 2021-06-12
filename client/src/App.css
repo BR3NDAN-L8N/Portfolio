@@ -32,3 +32,35 @@ header.App-header {
 img, .btn {
     border-radius: 5px;
 }
+
+@media screen and (min-width: 800px) {
+    div.App {
+        margin-top: 0;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas: 
+            "hero main"
+            "footer footer";
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+        margin: 4rem 0;
+}
+    section.container.grid-hero {
+        grid-area: hero;
+        width: 100%;
+    }
+    main {
+        grid-area: main;
+    }
+    .App footer {
+        grid-area: footer;
+    }
+    nav#navbar {
+        display: none;
+    }
+}

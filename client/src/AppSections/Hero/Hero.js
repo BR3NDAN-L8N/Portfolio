@@ -39,7 +39,7 @@ const styles = {
 
 export default function Hero() {
     return (
-        <section style={styles.hero} className="container">
+        <section style={styles.hero} className="container grid-hero">
             <header style={styles.heroFlex}>
                 <figure style={styles.figure}>
                     <img style={styles.image} src={imageOfMe}

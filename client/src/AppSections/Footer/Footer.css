@@ -1,7 +1,6 @@
 footer {
-    width: 100vw;
-    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
     background-color: var(--tertiary-background);
     color: var(--tertiary-text);
-    text-align: center;
 }
