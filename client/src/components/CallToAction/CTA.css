@@ -1,5 +1,6 @@
 @media screen and (min-width: 800px) {
-    article.contact {
+    
+    button.call-to-action {
         display: none;
     }
 }

@@ -2,6 +2,8 @@ import React from 'react'
 import {Link} from 'react-scroll'
 // import NavbarLink from '../Navbar/NavbarLink/NavbarLink'
 
+import './CTA.css'
+
 export default function CTA(props) {
     // const styles = {
     //     button: {
@@ -9,7 +11,7 @@ export default function CTA(props) {
     //     }
     // }
     return (
-        <button>
+        <button className="call-to-action">
             <Link
                 to={props.sectionId}
                 smooth="true"

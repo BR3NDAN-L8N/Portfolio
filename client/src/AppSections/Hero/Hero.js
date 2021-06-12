@@ -2,6 +2,7 @@ import React from 'react'
 
 import CTA from '../../components/CallToAction/CTA'
 import ContactStrip from '../../components/Contacts/ContactStrip'
+import NavbarLink from '../../components/Navbar/NavbarLink/NavbarLink'
 import imageOfMe from './assets/me.jpeg'
 
 import './Hero.css'
@@ -23,6 +24,16 @@ export default function Hero() {
                     text="View My Work"
                     sectionId="projects-section"
                 />
+                <nav className="desktop-nav">
+                    <NavbarLink
+                        name="About"
+                        id="about-section"
+                    />
+                    <NavbarLink
+                        name="Projects"
+                        id="projects-section"
+                    />
+                </nav>
             </header>
         </section>
     )

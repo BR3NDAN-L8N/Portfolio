@@ -28,6 +28,9 @@ section.hero {
     padding: none;
     margin: none;
 }
+.hero nav.desktop-nav {
+    display: none;
+} 
 
 @media screen and (min-width: 800px) {
     section.grid-hero header {
@@ -35,5 +38,42 @@ section.hero {
     }
     section.grid-hero header p {
         font-size: 0.8rem;
+    }
+    /* RESET nav */
+    nav {
+        display: none;
+        justify-content: normal;
+        align-items: normal; 
+        align-self: normal;   
+        position: unset;
+        width: auto;
+        height: auto;
+        background-color: var(--tertiary-background);
+        color: var(--tertiary-text);
+        font-size: large;
+        z-index: 999;    
+    }
+    .hero nav.desktop-nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center; 
+        align-self: flex-start;
+
+        height: auto;
+        width: 100%;
+
+        border-radius: 5px;
+        padding-left: 0;
+        padding-right: 0;
+    } 
+    .hero nav.desktop-nav .nav-link {
+        border: 2px solid var(--tertiary-background);
+        border-radius: 5px;
+        width: 100%;
+    }
+    .hero nav.desktop-nav .nav-link:hover {
+        background-color: var(--primary-background);
+        color: var(--tertiary-background);
     }
 }
