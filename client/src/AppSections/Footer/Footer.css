@@ -6,3 +6,9 @@ footer {
     background-color: var(--tertiary-background);
     color: var(--tertiary-text);
 }
+
+@media screen and (min-width: 800px) {
+    footer {
+        border-radius: 5px 5px 0px 0px;
+    }
+}

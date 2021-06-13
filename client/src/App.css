@@ -76,7 +76,7 @@ img, .btn {
         grid-template-columns: 1fr 2fr;
         grid-template-areas: 
             "hero main"
-            "footer footer";
+            "hero footer";
         column-gap: 2rem;
         padding: 0 5vw;
     }
@@ -87,13 +87,6 @@ img, .btn {
         justify-content: center;
         gap: 3rem;
         margin: 4rem 0;
-}
-    section.container.grid-hero {
-        position: sticky;
-        top: 0;
-        margin-top: 0;
-        grid-area: hero;
-        width: 100%;
     }
     main {
         grid-area: main;
