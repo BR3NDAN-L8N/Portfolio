@@ -1,9 +1,8 @@
-.nav-link {
-    padding-left: 15px;
-}
 .nav-link:hover {
     cursor: pointer;
-    color: var(--tertiary-text-hover);
+    background-color: var(--primary-background);
+    color: var(--tertiary-background);
+    border-radius: 5px;
 }
 .nav-link:active {
     text-decoration: underline;

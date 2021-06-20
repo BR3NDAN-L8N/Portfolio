@@ -7,7 +7,6 @@ nav {
     top: 0;
     right: 0;
     left: 0;
-    width: 100vw;
     height: 50px;
     padding: 0 10vw;
     background-color: var(--tertiary-background);
@@ -20,12 +19,16 @@ nav {
     display: flex;
     justify-content: space-around;
 }
+.nav-links > .nav-link {
+    margin-left: 15px;
+}
 
 .fa-bars-button {
     display: none;
     background-color: var(--tertiary-background);
     color: var(--tertiary-text);
     border: none;
+    padding: 0;
 }
 button.fa-bars-button:hover {
     color: var(--tertiary-text-hover);

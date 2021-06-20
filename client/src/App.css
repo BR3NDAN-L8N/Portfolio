@@ -1,3 +1,8 @@
+div.App {
+    background-color: rgb(37, 37, 37);
+    /* background-image: url("./assets/brick-wall.jpg");
+    background-size: 100%; */
+}
 .container {
     display: flex;
     flex-direction: column;
@@ -5,6 +10,7 @@
     justify-content: center;
     gap: 3rem;
     margin: 4rem 0;
+    background-color: var(--primary-background);
 }
 .row {
     display: flex;

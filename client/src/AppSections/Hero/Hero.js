@@ -5,6 +5,7 @@ import ContactStrip from '../../components/Contacts/ContactStrip'
 import NavbarLink from '../../components/Navbar/NavbarLink/NavbarLink'
 import imageOfMe from './assets/me.jpeg'
 
+import brickWall from '../../assets/brick-wall.jpg'
 import './Hero.css'
 
 export default function Hero() {
