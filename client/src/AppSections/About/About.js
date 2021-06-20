@@ -44,7 +44,7 @@ export default function About() {
             <SectionHeader title="About" />
             <section>
                 <div style={styles.iconsContainer}>
-                    <IconContext.Provider value={{ size: "3rem" }}>
+                    <IconContext.Provider value={{ size: "3em" }}>
                         <div style={styles.row1and3}>
                             <Tooltip
                                 for={<SiHtml5 color="#e44d26" />}

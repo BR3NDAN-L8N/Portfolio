@@ -1,5 +1,5 @@
 div.App {
-    background-color: rgb(37, 37, 37);
+    background-color: rgb(73, 73, 73);
     /* background-image: url("./assets/brick-wall.jpg");
     background-size: 100%; */
 }
@@ -9,8 +9,9 @@ div.App {
     align-items: center;
     justify-content: center;
     gap: 3rem;
-    margin: 4rem 0;
+    padding: 1em 10px;
     background-color: var(--primary-background);
+    border-radius: 10px;
 }
 .row {
     display: flex;
@@ -78,13 +79,13 @@ img, .btn {
 @media screen and (min-width: 800px) {
     div.App {
         margin-top: 0;
+        padding: 10vh 5vw 0;
         display: grid;
         grid-template-columns: 1fr 2fr;
         grid-template-areas: 
             "hero main"
             "hero footer";
         column-gap: 2rem;
-        padding: 0 5vw;
     }
     .container {
         display: flex;
@@ -92,7 +93,6 @@ img, .btn {
         align-items: center;
         justify-content: center;
         gap: 3rem;
-        margin: 4rem 0;
     }
     main {
         grid-area: main;
