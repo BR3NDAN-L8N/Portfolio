@@ -1,3 +1,11 @@
+article.contact ul li {
+    list-style-type: none;
+}
+article.contact ul li a {
+    text-decoration: none;
+    color: var(--test);
+}
+
 @media screen and (min-width: 800px) {
     article.contact {
         display: none;
