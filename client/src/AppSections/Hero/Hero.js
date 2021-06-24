@@ -16,7 +16,7 @@ export default function Hero() {
                         alt="Me smiling, rocking a bushy beard and a mohawk" />
                 </figure>
                 <h1>Brendan Leighton</h1>
-                <p>Web Engineer</p>
+                <p>Web Engineering Portfolio</p>
                 <ContactStrip 
                     size="1.3rem"
                 />
@@ -26,14 +26,15 @@ export default function Hero() {
                 />
                 <nav className="desktop-nav">
                     <NavbarLink
-                        name="About"
-                        id="about-section"
-                    />
-                    <NavbarLink
                         name="Projects"
                         id="projects-section"
                     />
+                    <NavbarLink
+                        name="About"
+                        id="about-section"
+                    />
                 </nav>
+                <a className="resume-download" href="https://drive.google.com/uc?export=download&id=1cEtcFu5ZKTvZ2Ja9gL7d9XIrn4Z_HFTO" download>Download Resume</a>
             </header>
         </section>
     )
