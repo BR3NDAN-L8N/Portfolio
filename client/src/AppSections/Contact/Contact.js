@@ -16,7 +16,7 @@ export default function Contact() {
             <ul>
                 {/* Refer to contactStrip.js for a breakdown of the email url */}
                 <li>Email: <a href="mailto:BR3NDAN.L8N@gmail.com?subject=%7E%7E%7E%20Message%20For%20Job%20%7E%7E%7E&body=Your%20Name:%20%0D%0ACompany:%20%0D%0APosition:%20%0D%0AAvailability%20For%20Phone%20Screen:" target="blank">BR3NDAN.L8N@gmail.com</a></li>
-                <li>Availability: Mon-Fri, 9am-5pm</li>
+                <li>Availability: Mon-Fri, 9am-5pm EST</li>
             </ul>
             <ContactStrip
                 display="flex"

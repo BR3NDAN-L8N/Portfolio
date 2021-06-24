@@ -99,18 +99,18 @@ export default function About() {
                             />
                             <p style={styles.centerText}>HOBBY</p>
                             <Tooltip
-                                for={<RiMentalHealthFill color="#ec2fad" />}
-                                text="Psychology"
+                                for={<RiStockFill color="#b81d1d" />}
+                                text="Stock Market Investing"
                             />
                         </div>
                         <div style={styles.row1and3}>
                             <Tooltip
-                                for={<RiStockFill color="#b81d1d" />}
-                                text="Stock Market Investing"
-                            />
-                            <Tooltip
                                 for={<RiEmotionLaughFill color="#e7d911" />}
                                 text="Standup Comedy"
+                            />
+                            <Tooltip
+                                for={<RiMentalHealthFill color="#ec2fad" />}
+                                text="Psychology"
                             />
                         </div>
                     </IconContext.Provider>
