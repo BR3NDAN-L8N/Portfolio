@@ -33,7 +33,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 4rem;
-    padding: 0 10vw;
+    padding-bottom: 3rem;
 }
 h1, h2 {
     font-size: calc(1rem + 5vw);
@@ -64,6 +64,9 @@ button:hover {
 }
 
 @media screen and (min-width: 800px) {
+    main {
+        padding: 0 10vw;
+    }
     h1 {font-size: 1rem;}
 }
 
