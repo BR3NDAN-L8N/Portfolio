@@ -40,9 +40,9 @@ export default function About() {
         }
     }
     return (
-        <article className="container">
+        <article className="container About">
             <SectionHeader title="About" />
-            <section>
+            <section className="circular-icons">
                 <div style={styles.iconsContainer}>
                     <IconContext.Provider value={{ size: "3em" }}>
                         <div style={styles.row1and3}>
@@ -78,8 +78,6 @@ export default function About() {
                         </div>
                     </IconContext.Provider>
                 </div>
-            </section>
-            <section>
                 <div style={styles.iconsContainer}>
                     <IconContext.Provider value={{ size: "3rem" }}>
                         <div style={styles.row1and3}>

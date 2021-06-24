@@ -1,4 +1,4 @@
-div.about-wrapper {
+article.About section.circular-icons {
     display: flex;
     justify-content: center;
     gap: 2rem;
