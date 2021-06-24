@@ -3,6 +3,8 @@ import React from 'react'
 import { IconContext } from "react-icons"
 import { HiOutlineMailOpen } from 'react-icons/hi'
 import { FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa'
+// COMPONENTS
+import Tooltip from '../Tooltip/Tooltip'
 
 export default function ContactStrip(props) {
 
@@ -25,10 +27,22 @@ export default function ContactStrip(props) {
     return (
         <div style={styles.flex}>
             <IconContext.Provider value={{ color: "#238de4", size: props.size }}>
-                <a href={emailUrl} target="blank"><HiOutlineMailOpen /></a>
-                <a href="https://www.linkedin.com/in/brendan-leighton/" target="blank"><FaLinkedin /></a>
-                <a href='https://github.com/BR3NDAN-L8N' target="blank"><FaGithub /></a>
-                <a href="https://twitter.com/StBrendanGames" target="blank"><FaTwitter /></a>
+                <Tooltip
+                    for={<a href={emailUrl} target="blank"><HiOutlineMailOpen /></a>}
+                    text="Send an Email"
+                />
+                <Tooltip
+                    for={<a href="https://www.linkedin.com/in/brendan-leighton/" target="blank"><FaLinkedin /></a>}
+                    text="View LinkedIn"
+                />
+                <Tooltip
+                    for={<a href='https://github.com/BR3NDAN-L8N' target="blank"><FaGithub /></a>}
+                    text="View Github"
+                />
+                <Tooltip
+                    for={<a href="https://twitter.com/StBrendanGames" target="blank"><FaTwitter /></a>}
+                    text="View Twitter"
+                /> 
             </IconContext.Provider>
         </div>
     )
