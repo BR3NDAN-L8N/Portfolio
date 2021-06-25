@@ -40,26 +40,36 @@ article.About .circular-icons-center-text {
     }
     .tech-icons {
         grid-area: tech-icons;
+        margin: auto;
     }
     .personal-icons {
         grid-area: personal-icons;
+        margin: auto;
     }
     p.personal-text {
         grid-area: personal-text;
     }
 }
-@media screen and (min-width: 700px) {
-    p.techs-text, p.personal-text {
-        max-width: 30ch;
+@media screen and (min-width: 800px) {
+    div.about-content {
+        display: flex;
     }
+}
+    /* @media screen and (min-width: 800px) {
     div.about-content {
         grid-template-areas:
             "tech-text tech-icons" 
             "personal-icons personal-text";
     }
-}
+} */
 
 @media screen and (min-width: 920px) {
+    div.about-content {
+        display: grid;
+    }
+    p.techs-text, p.personal-text {
+        max-width: 30ch;
+    }
     p.techs-text, p.personal-text {
         max-width: unset;
     }

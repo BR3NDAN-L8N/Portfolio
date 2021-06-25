@@ -83,7 +83,7 @@ img, .btn {
             "hero main"
             "hero footer";
         column-gap: 5vw;
-        background-color: rgb(73, 73, 73);
+        background-color: hsl(273, 32%, 39%)
     }
     .container {
         display: flex;
