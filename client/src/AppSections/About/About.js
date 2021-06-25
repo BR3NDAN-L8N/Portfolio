@@ -58,7 +58,7 @@ export default function About() {
                     </IconContext.Provider>
                 </div>
                 <p className="personal-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum aliquid amet porro iste accusamus suscipit, perferendis rerum blanditiis numquam consequatur, sit quia veniam necessitatibus excepturi inventore? Quibusdam, laudantium nihil? Cum?
+                    In my free time, I can be found on my computer playing games, watching standup comedians or other comedy-related content, or learning about PC hardware, finances, or psychology.
                 </p>
                 <div className="icons-container personal-icons">
                     <IconContext.Provider value={{ size: "3rem" }}>
