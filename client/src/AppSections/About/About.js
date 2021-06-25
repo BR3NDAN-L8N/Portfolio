@@ -15,37 +15,16 @@ import './About.css';
 
 export default function About() {
 
-    const styles = {
-        iconsContainer: {
-            fontSize: `5rem`,
-            width: `100%`,
-            display: `flex`,
-            flexDirection: `column`,
-            justifyContent: `center`,
-            gap: `1rem`
-        },
-        row1and3: {
-            display: `flex`,
-            justifyContent: `center`,
-            gap: `1rem`,
-            fontSize: `3rem`
-        },
-        row2: {
-            display: `flex`,
-            justifyContent: `space-between`,
-            gap: `2rem`
-        },
-        centerText: {
-            margin: `auto`
-        }
-    }
     return (
         <article className="container About">
             <SectionHeader title="About" />
-            <section className="circular-icons">
-                <div style={styles.iconsContainer}>
+            <div className="about-content">
+                <p className="techs-text">
+                    During early COVID, I decided to focus my attention full-time on my dream of being a programmer. I'm currently seeking a role that allows me to use my favorite technologies, discover new great technologies, and ultimately loving what I'm doing.
+                </p>
+                <div className="icons-container tech-icons">
                     <IconContext.Provider value={{ size: "3em" }}>
-                        <div style={styles.row1and3}>
+                        <div className="row1-and-3">
                             <Tooltip
                                 for={<SiHtml5 color="#e44d26" />}
                                 text="HTML5"
@@ -55,18 +34,18 @@ export default function About() {
                                 text="CSS3"
                             />
                         </div>
-                        <div style={styles.row2}>
+                        <div className="row2">
                             <Tooltip
                                 for={<SiJavascript color="#f0db4f" />}
                                 text="JavaScript"
                             />
-                            <p style={styles.centerText}>TECHS</p>
+                            <p className="circular-icons-center-text">TECHS</p>
                             <Tooltip
                                 for={<SiReact color="#61dbfb" />}
                                 text="React"
                             />
                         </div>
-                        <div style={styles.row1and3}>
+                        <div className="row1-and-3">
                             <Tooltip
                                 for={<SiNodeDotJs color="#6ba063" />}
                                 text="Node.js"
@@ -78,9 +57,12 @@ export default function About() {
                         </div>
                     </IconContext.Provider>
                 </div>
-                <div style={styles.iconsContainer}>
+                <p className="personal-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum aliquid amet porro iste accusamus suscipit, perferendis rerum blanditiis numquam consequatur, sit quia veniam necessitatibus excepturi inventore? Quibusdam, laudantium nihil? Cum?
+                </p>
+                <div className="icons-container personal-icons">
                     <IconContext.Provider value={{ size: "3rem" }}>
-                        <div style={styles.row1and3}>
+                        <div className="row1-and-3">
                             <Tooltip
                                 for={<IoLogoGameControllerB color="#349bd6" />}
                                 text="PC Gaming"
@@ -90,18 +72,18 @@ export default function About() {
                                 text="Computer Hardware"
                             />
                         </div>
-                        <div style={styles.row2}>
+                        <div className="row2">
                             <Tooltip
                                 for={<GiTakeMyMoney color="#168b1c" />}
                                 text="Personal Finances"
                             />
-                            <p style={styles.centerText}>HOBBY</p>
+                            <p className="circular-icons-center-text">HOBBY</p>
                             <Tooltip
                                 for={<RiStockFill color="#b81d1d" />}
                                 text="Stock Market Investing"
                             />
                         </div>
-                        <div style={styles.row1and3}>
+                        <div className="row1-and-3">
                             <Tooltip
                                 for={<RiEmotionLaughFill color="#e7d911" />}
                                 text="Standup Comedy"
@@ -113,8 +95,8 @@ export default function About() {
                         </div>
                     </IconContext.Provider>
                 </div>
-            </section>
-                    {/* Strength & Weakness lists? */}
+            </div>
+            {/* Strength & Weakness lists? */}
         </article>
     )
 }

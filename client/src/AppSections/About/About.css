@@ -1,5 +1,101 @@
-article.About section.circular-icons {
+div.about-content {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
+}
+
+article.About .icons-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 250px;
+}
+article.About .row1-and-3 {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 3rem;
+}
+article.About .row2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+article.About .circular-icons-center-text {
+    margin: auto;
+}
+@media screen and (min-width: 550px) {
+    div.about-content { 
+        display: grid;
+        gap: 2rem;
+        grid-template-areas:
+            "tech-text tech-text"
+            "tech-icons personal-icons"
+            "personal-text personal-text";
+    }
+    p.techs-text {
+        grid-area: tech-text;
+    }
+    .tech-icons {
+        grid-area: tech-icons;
+    }
+    .personal-icons {
+        grid-area: personal-icons;
+    }
+    p.personal-text {
+        grid-area: personal-text;
+    }
+}
+@media screen and (min-width: 700px) {
+    p.techs-text, p.personal-text {
+        max-width: 30ch;
+    }
+    div.about-content {
+        grid-template-areas:
+            "tech-text tech-icons" 
+            "personal-icons personal-text";
+    }
+}
+
+@media screen and (min-width: 920px) {
+    p.techs-text, p.personal-text {
+        max-width: unset;
+    }
+    div.about-content {
+        grid-template-areas:
+            "tech-text tech-text"
+            "tech-icons personal-icons"
+            "personal-text personal-text";
+    }
+}
+
+@media screen and (min-width: 1006px) {
+    p.techs-text, p.personal-text {
+        max-width: 30ch;
+    }
+    p.techs-text {
+        text-align: right;
+    }
+    p.personal-text {
+        text-align: left;
+    }
+    .icons-container, .about-content > p {
+        margin: auto;
+    }
+    div.about-content {
+        grid-template-areas:
+            "tech-text tech-icons" 
+            "personal-icons personal-text";
+    }
+    
+}
+@media screen and (min-width: 1300px) {
+    div.about-content {
+        gap: 4rem 0rem;
+    }
+    p.techs-text, p.personal-text {
+        max-width: unset;
+    }
 }
