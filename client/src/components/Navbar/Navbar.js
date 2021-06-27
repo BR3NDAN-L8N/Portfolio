@@ -5,9 +5,9 @@ import SideDrawer from './SideDrawer/SideDrawer';
 import BackDrop from './SideDrawer/BackDrop';
 //  STYLESHEET
 import './Navbar.css';
-//  FONT AWESOME ICONS
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+//  ICONS
+import { FaHamburger } from 'react-icons/fa'
+import { IconContext } from "react-icons"
 
 export default function Navbar() {
 
@@ -18,9 +18,7 @@ export default function Navbar() {
         setDisplaySideDrawer(prevState => !prevState);
     }
 
-    const hamburgerMenu = <FontAwesomeIcon icon={faBars} />
 
-    
 
     return (
         <nav id="navbar">
@@ -43,9 +41,11 @@ export default function Navbar() {
                     id="contact-section"
                 />
             </span>
-            <button className="fa-bars-button" onClick={toggleSideDrawer}>
-                    {hamburgerMenu}
-            </button>
+            <IconContext.Provider value={{ color: "#340d54" }}>
+                <button className="fa-bars-button" onClick={toggleSideDrawer}>
+                    <FaHamburger />
+                </button>
+            </IconContext.Provider>
             <SideDrawer
                 open={displaySideDrawer}
                 onClick={toggleSideDrawer}

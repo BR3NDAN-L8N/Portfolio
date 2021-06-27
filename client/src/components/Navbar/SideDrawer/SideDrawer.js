@@ -1,25 +1,24 @@
-import React from 'react';
-import ReactDom from 'react-dom';
-
-import NavbarLink from '../NavbarLink/NavbarLink';
-
+import React from 'react'
+import ReactDom from 'react-dom'
+//  COMPONENTS
+import NavbarLink from '../NavbarLink/NavbarLink'
 import './SideDrawer.css';
-//  FONT AWESOME ICONS
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTimes } from '@fortawesome/free-solid-svg-icons';
+//  ICONS
+import { AiOutlineCloseCircle } from 'react-icons/ai'
+import { IconContext } from "react-icons"
 
 export default function SideDrawer(props) {
 
     if (!props.open) return null;
 
-    const closeIcon = <FontAwesomeIcon icon={faTimes} />
-
     // 
     return ReactDom.createPortal(
         <div className="side-drawer">
-            <button className="close-drawer" onClick={props.onClick}>
-                {closeIcon}
-            </button>
+            <IconContext.Provider value={{ color: "#340d54" }}>
+                <button className="close-drawer" onClick={props.onClick}>
+                    <AiOutlineCloseCircle />
+                </button>
+            </IconContext.Provider>
             <NavbarLink
                 name="Top"
                 id="scroll-top"

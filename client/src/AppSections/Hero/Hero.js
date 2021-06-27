@@ -1,10 +1,11 @@
 import React from 'react'
-
+//  COMPONENTS
 import CTA from '../../components/CallToAction/CTA'
 import ContactStrip from '../../components/Contacts/ContactStrip'
 import NavbarLink from '../../components/Navbar/NavbarLink/NavbarLink'
+//  IMAGES
 import imageOfMe from './assets/me.jpeg'
-
+//  CSS
 import './Hero.css'
 
 export default function Hero() {

@@ -6,9 +6,7 @@ import Projects from "./AppSections/Projects/Projects"
 import About from "./AppSections/About/About"
 import Contact from "./AppSections/Contact/Contact"
 import Footer from './AppSections/Footer/Footer'
-
-
-
+//  CSS
 import './App.css';
 
 function App() {
