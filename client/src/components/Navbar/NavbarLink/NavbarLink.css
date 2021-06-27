@@ -1,5 +1,6 @@
 a.nav-link {
     padding: 0 0.25em;
+    margin: unset auto;
 }
 .nav-link:hover {
     cursor: pointer;

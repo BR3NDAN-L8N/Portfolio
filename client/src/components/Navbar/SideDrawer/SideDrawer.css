@@ -8,12 +8,13 @@
     flex-direction: column;
     align-items: flex-end;
     gap: 0.5rem;
-    padding:2rem 10vw;
+    padding: 7px 10vw;
 
     height: 100vh;
-    min-width: 75vw;
+    width: 20ch;
     background-color: var(--tertiary-background);
-    color: var(--tertiary-text);
+    color: var(--primary-background);
+    font-weight: bold;
 }
 .side-drawer-links:active {
     text-decoration: underline;
@@ -31,6 +32,7 @@
     background-color: var(--tertiary-background-transparent);
 }
 .close-drawer {
+    padding: 0;
     background-color: var(--tertiary-background);
     color: var(--tertiary-text);
     border: none;

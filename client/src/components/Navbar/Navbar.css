@@ -14,7 +14,9 @@ nav {
     font-size: large;
     z-index: 999;    
 }
-
+.icon:hover {
+    color: white;
+}
 .nav-links {
     display: flex;
     justify-content: space-around;

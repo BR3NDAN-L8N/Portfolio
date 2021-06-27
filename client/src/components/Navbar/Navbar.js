@@ -6,8 +6,9 @@ import BackDrop from './SideDrawer/BackDrop';
 //  STYLESHEET
 import './Navbar.css';
 //  ICONS
-import { FaHamburger } from 'react-icons/fa'
 import { IconContext } from "react-icons"
+import { FaHamburger } from 'react-icons/fa'
+import { GiTopHat } from 'react-icons/gi'
 
 export default function Navbar() {
 
@@ -22,10 +23,12 @@ export default function Navbar() {
 
     return (
         <nav id="navbar">
-            <NavbarLink
-                name="Home"
-                id="scroll-top"
-            />
+            <IconContext.Provider value={{ color: "#340d54", size: "2rem", hover: { color: "white" } }}>
+                <NavbarLink
+                    name={<GiTopHat />}
+                    id="scroll-top"
+                />
+            </IconContext.Provider>
 
             <span className="nav-links">
                 <NavbarLink
@@ -41,7 +44,7 @@ export default function Navbar() {
                     id="contact-section"
                 />
             </span>
-            <IconContext.Provider value={{ color: "#340d54" }}>
+            <IconContext.Provider value={{ color: "#340d54", size: "2rem" }}>
                 <button className="fa-bars-button" onClick={toggleSideDrawer}>
                     <FaHamburger />
                 </button>

@@ -14,7 +14,7 @@ export default function SideDrawer(props) {
     // 
     return ReactDom.createPortal(
         <div className="side-drawer">
-            <IconContext.Provider value={{ color: "#340d54" }}>
+            <IconContext.Provider value={{ color: "#340d54", size: "2rem" }}>
                 <button className="close-drawer" onClick={props.onClick}>
                     <AiOutlineCloseCircle />
                 </button>
