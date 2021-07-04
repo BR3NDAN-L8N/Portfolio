@@ -42,11 +42,11 @@ section.hero {
 @media screen and (min-width: 800px) {
     section.container.grid-hero {
         position: sticky;
-        top: 5vw;
+        top: 5vh;
         margin: 0;
         grid-area: hero;
         width: 100%;
-        height: calc(100vh - 10vw);
+        height: 90vh;
     }
     section.grid-hero header {
         gap: 1rem;
