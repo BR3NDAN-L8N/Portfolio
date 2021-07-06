@@ -1,7 +1,7 @@
-div.App {
-    /* background-image: url("./assets/brick-wall.jpg");
-    background-size: 100%; */
-}
+/* div.App {
+    background-image: url("./assets/brick-wall.jpg");
+    background-size: 100%;
+} */
 .container {
     display: flex;
     flex-direction: column;
