@@ -25,14 +25,14 @@ nav {
     margin-left: 15px;
 }
 
-.fa-bars-button {
+.menu-button {
     display: none;
     background-color: var(--tertiary-background);
     color: var(--tertiary-text);
     border: none;
     padding: 0;
 }
-button.fa-bars-button:hover {
+button.menu-button:hover {
     color: var(--tertiary-text-hover);
     text-decoration: none;
     border: none;
@@ -43,7 +43,7 @@ button.fa-bars-button:hover {
         display: none;
     }
 
-    .fa-bars-button {
+    .menu-button {
         display: block;
     }
 }

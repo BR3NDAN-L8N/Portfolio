@@ -26,13 +26,12 @@ html {
 
 body {
     color: rgb(221, 221, 221);
-    background-color: var(--primary-background);
     font-family: 'Poppins', sans-serif;
 }
 main {
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 5vh;
     padding-bottom: 3rem;
 }
 h1, h2 {

@@ -17,7 +17,7 @@ export default function CTA(props) {
                 smooth="true"
                 duration={500}
                 delay={0}
-                offset={-75}
+                offset={-65}
             >
                 {props.text}
             </Link>

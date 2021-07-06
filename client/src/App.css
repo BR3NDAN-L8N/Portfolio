@@ -82,7 +82,7 @@ img, .btn {
         grid-template-areas: 
             "hero main"
             "hero footer";
-        column-gap: 5vw;
+        column-gap: 5vh;
         background-color: hsl(273, 32%, 39%)
     }
     .container {

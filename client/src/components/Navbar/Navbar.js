@@ -45,7 +45,7 @@ export default function Navbar() {
                 />
             </span>
             <IconContext.Provider value={{ color: "#340d54", size: "2rem" }}>
-                <button className="fa-bars-button" onClick={toggleSideDrawer}>
+                <button className="menu-button" onClick={toggleSideDrawer}>
                     <FaHamburger />
                 </button>
             </IconContext.Provider>
