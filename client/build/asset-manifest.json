@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d755fbf5.chunk.css",
+    "main.js": "/static/js/main.4dab5443.chunk.js",
+    "main.js.map": "/static/js/main.4dab5443.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.c924b25f.js",
+    "runtime-main.js.map": "/static/js/runtime-main.c924b25f.js.map",
+    "static/js/2.ed64ee5e.chunk.js": "/static/js/2.ed64ee5e.chunk.js",
+    "static/js/2.ed64ee5e.chunk.js.map": "/static/js/2.ed64ee5e.chunk.js.map",
+    "static/js/3.b9c1a092.chunk.js": "/static/js/3.b9c1a092.chunk.js",
+    "static/js/3.b9c1a092.chunk.js.map": "/static/js/3.b9c1a092.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.d755fbf5.chunk.css.map": "/static/css/main.d755fbf5.chunk.css.map",
+    "static/js/2.ed64ee5e.chunk.js.LICENSE.txt": "/static/js/2.ed64ee5e.chunk.js.LICENSE.txt",
+    "static/media/adventure-buddies-tiny.637c9a8e.png": "/static/media/adventure-buddies-tiny.637c9a8e.png",
+    "static/media/me.2e66e55d.jpeg": "/static/media/me.2e66e55d.jpeg",
+    "static/media/my-covid-tracker-tiny.bfd0c147.png": "/static/media/my-covid-tracker-tiny.bfd0c147.png",
+    "static/media/safe-space-tiny.d224c618.png": "/static/media/safe-space-tiny.d224c618.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c924b25f.js",
+    "static/js/2.ed64ee5e.chunk.js",
+    "static/css/main.d755fbf5.chunk.css",
+    "static/js/main.4dab5443.chunk.js"
+  ]
+}
